@@ -29,6 +29,7 @@ by [brandon-rowe](https://github.com/brandon-rowe) and [dylan-napoli](https://gi
 ```bash
 git clone https://github.com/brandon-rowe/angular-dashboard
 cd angular-dashboard
+npm install -g @angular/cli
 npm install
 ng serve
 ```
