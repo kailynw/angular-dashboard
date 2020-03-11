@@ -1,4 +1,3 @@
-#Pull html from coinmarket. Convert to local html file.
 import requests
 import csv
 import bs4
@@ -6,10 +5,8 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 def main():
-        #use requests for get, put, post, delete
         response = requests.get('https://coinmarketcap.com/currencies/bitcoin/historical-data/?start=20130428&end=20200311')
-        txt = open("coinmarketdata.txt", 'w')
-        with open('coinmarket.html', 'w') as f:
+        with open('coinmarketdata.txt', 'w') as txt:
                 data = response.text
                 soup = BeautifulSoup(data, 'html.parser')
                 td = soup.find_all('td')
@@ -17,18 +14,18 @@ def main():
                     value = i.contents[0].contents[0]
                     input = value + "|"
                     txt.write(str(input))
-                f.write(data)
-                f.close()
                 txt.close()
         readcoin()
 
+
 def readcoin():
-    with open('coinmarket.csv', 'r') as csvfile:
+    with open('coinmarketdata.txt', 'r') as csvfile:
         data = csv.reader(csvfile, delimiter='|')
         with open('data.csv', 'w') as c:
             cwriter = csv.writer(c, delimiter='|')
             i = 0
             l = list()
+            cwriter.writerow(['Date','Open', 'High', 'Low', 'Close' ])
             for row in data:
                 for word in row:
                     if(i==5):
