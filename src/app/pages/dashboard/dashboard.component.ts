@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import Chart from 'chart.js';
 
 @Component({
-  selector: "app-dashboard",
+  selector: "app-dashboard", 
   templateUrl: "dashboard.component.html"
 })
 export class DashboardComponent implements OnInit {
@@ -14,10 +14,14 @@ export class DashboardComponent implements OnInit {
   public clicked: boolean = true;
   public clicked1: boolean = false;
   public clicked2: boolean = false;
-
+  private tt_default_background= '#f3f3f3';
+  private tt_default_title='black'
+  private redChartConfig= {lineColor:"#ec250d", pointColor:"#ec250d", stroke1: 'rgba(233,32,16,0.2)', stroke2: 'rgba(233,32,16,0.0)', stroke3: 'rgba(233,32,16,0.0)'};
+  private purpleChartConfig= {lineColor:"#a742f5", pointColor: "#a742f0", stroke1: "rgba(165, 55, 253, 0.5)", stroke2: "rgba(165, 55, 253, 0.0)", stroke3: "rgba(165, 55, 253, 0.0)"}
   constructor() {}
 
   ngOnInit() {
+
     var gradientChartOptionsConfigurationWithTooltipBlue: any = {
       maintainAspectRatio: false,
       legend: {
@@ -25,8 +29,8 @@ export class DashboardComponent implements OnInit {
       },
 
       tooltips: {
-        backgroundColor: '#f5f5f5',
-        titleFontColor: '#333',
+        backgroundColor: this.tt_default_background,
+        titleFontColor: this.tt_default_title,
         bodyFontColor: '#666',
         bodySpacing: 4,
         xPadding: 12,
@@ -73,8 +77,8 @@ export class DashboardComponent implements OnInit {
       },
 
       tooltips: {
-        backgroundColor: '#f5f5f5',
-        titleFontColor: '#333',
+        backgroundColor: this.tt_default_background,
+        titleFontColor: this.tt_default_title,
         bodyFontColor: '#666',
         bodySpacing: 4,
         xPadding: 12,
@@ -95,7 +99,7 @@ export class DashboardComponent implements OnInit {
             suggestedMin: 60,
             suggestedMax: 125,
             padding: 20,
-            fontColor: "#9a9a9a"
+            fontColor: "#a742f5"
           }
         }],
 
@@ -108,7 +112,7 @@ export class DashboardComponent implements OnInit {
           },
           ticks: {
             padding: 20,
-            fontColor: "#9a9a9a"
+            fontColor: "#a742f5"
           }
         }]
       }
@@ -121,8 +125,8 @@ export class DashboardComponent implements OnInit {
       },
 
       tooltips: {
-        backgroundColor: '#f5f5f5',
-        titleFontColor: '#333',
+        backgroundColor: this.tt_default_background,
+        titleFontColor: this.tt_default_title,
         bodyFontColor: '#666',
         bodySpacing: 4,
         xPadding: 12,
@@ -169,8 +173,8 @@ export class DashboardComponent implements OnInit {
       },
 
       tooltips: {
-        backgroundColor: '#f5f5f5',
-        titleFontColor: '#333',
+        backgroundColor: this.tt_default_background,
+        titleFontColor: this.tt_default_title,
         bodyFontColor: '#666',
         bodySpacing: 4,
         xPadding: 12,
@@ -217,8 +221,8 @@ export class DashboardComponent implements OnInit {
       },
 
       tooltips: {
-        backgroundColor: '#f5f5f5',
-        titleFontColor: '#333',
+        backgroundColor: this.tt_default_background,
+        titleFontColor: this.tt_default_title,
         bodyFontColor: '#666',
         bodySpacing: 4,
         xPadding: 12,
@@ -266,8 +270,8 @@ export class DashboardComponent implements OnInit {
       },
 
       tooltips: {
-        backgroundColor: '#f5f5f5',
-        titleFontColor: '#333',
+        backgroundColor: this.tt_default_background,
+        titleFontColor: this.tt_default_title,
         bodyFontColor: '#666',
         bodySpacing: 4,
         xPadding: 12,
@@ -307,14 +311,14 @@ export class DashboardComponent implements OnInit {
       }
     };
 
+    /******** TOTOAL SHIPMENTS CHART *******/
     this.canvas = document.getElementById("chartLineRed");
     this.ctx = this.canvas.getContext("2d");
-
     var gradientStroke = this.ctx.createLinearGradient(0, 230, 0, 50);
 
-    gradientStroke.addColorStop(1, 'rgba(233,32,16,0.2)');
-    gradientStroke.addColorStop(0.4, 'rgba(233,32,16,0.0)');
-    gradientStroke.addColorStop(0, 'rgba(233,32,16,0)'); //red colors
+    gradientStroke.addColorStop(1, this.redChartConfig.stroke1);
+    gradientStroke.addColorStop(0.4, this.redChartConfig.stroke2);
+    gradientStroke.addColorStop(0,  this.redChartConfig.stroke3); //red colors
 
     var data = {
       labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
@@ -343,11 +347,13 @@ export class DashboardComponent implements OnInit {
       options: gradientChartOptionsConfigurationWithTooltipRed
     });
 
+    /***************************************/
 
+
+
+    /******** COMPLETED TASKS CHART *********/
     this.canvas = document.getElementById("chartLineGreen");
     this.ctx = this.canvas.getContext("2d");
-
-
     var gradientStroke = this.ctx.createLinearGradient(0, 230, 0, 50);
 
     gradientStroke.addColorStop(1, 'rgba(66,134,121,0.15)');
@@ -378,46 +384,46 @@ export class DashboardComponent implements OnInit {
     var myChart = new Chart(this.ctx, {
       type: 'line',
       data: data,
-      options: gradientChartOptionsConfigurationWithTooltipGreen
-
+      options: gradientChartOptionsConfigurationWithTooltipRed
     });
 
+    /********************************************/
 
 
+
+
+    /***** TOP SHIPMENTS/PERFORMANCE CHART  ******/
     var chart_labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
     this.datasets = [
       [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100],
       [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120],
       [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130]
     ];
-    this.data = this.datasets[0];
 
-
-
+    this.data = this.datasets[2];
     this.canvas = document.getElementById("chartBig1");
     this.ctx = this.canvas.getContext("2d");
-
     var gradientStroke = this.ctx.createLinearGradient(0, 230, 0, 50);
 
-    gradientStroke.addColorStop(1, 'rgba(233,32,16,0.2)');
-    gradientStroke.addColorStop(0.4, 'rgba(233,32,16,0.0)');
-    gradientStroke.addColorStop(0, 'rgba(233,32,16,0)'); //red colors
+    gradientStroke.addColorStop(1,this.purpleChartConfig.stroke1 );
+    gradientStroke.addColorStop(0.4, this.purpleChartConfig.stroke2);
+    gradientStroke.addColorStop(0,  this.purpleChartConfig.stroke3); //red colors 
 
     var config = {
       type: 'line',
       data: {
-        labels: chart_labels,
+        labels: chart_labels, 
         datasets: [{
           label: "My First dataset",
           fill: true,
           backgroundColor: gradientStroke,
-          borderColor: '#ec250d',
+          borderColor: this.purpleChartConfig.lineColor, //Line Color
           borderWidth: 2,
           borderDash: [],
           borderDashOffset: 0.0,
-          pointBackgroundColor: '#ec250d',
-          pointBorderColor: 'rgba(255,255,255,0)',
-          pointHoverBackgroundColor: '#ec250d',
+          pointBackgroundColor: this.purpleChartConfig.pointColor,//point color
+          pointBorderColor: 'rgba(255,255,255,0)',//transparent
+          pointHoverBackgroundColor: this.purpleChartConfig.pointColor,
           pointBorderWidth: 20,
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
@@ -429,7 +435,11 @@ export class DashboardComponent implements OnInit {
     };
     this.myChartData = new Chart(this.ctx, config);
 
+    /*************************************************/
 
+
+
+    /******* DAILY SALES CHART*******/
     this.canvas = document.getElementById("CountryChart");
     this.ctx  = this.canvas.getContext("2d");
     var gradientStroke = this.ctx.createLinearGradient(0, 230, 0, 50);
