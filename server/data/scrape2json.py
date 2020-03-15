@@ -1,7 +1,7 @@
 import csv, json, pathlib
 
-csvFilePath = str(pathlib.Path('data.csv').parent.absolute()) + '\\data\\data.csv'
-jsonFilePath = str(pathlib.Path('data.json').parent.absolute()) + '\\data\\data.json'
+csvFilePath = str(pathlib.Path('data.csv').parent.absolute()) + '/data.csv'
+jsonFilePath = str(pathlib.Path('data.json').parent.absolute()) + '/data.json'
 
 def main():
     data = {}

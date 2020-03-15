@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import Chart from 'chart.js';
+import {HttpClient} from "@angular/common/http"
+
 
 @Component({
   selector: "app-dashboard", 
@@ -18,11 +20,20 @@ export class DashboardComponent implements OnInit {
   private tt_default_title='black'
   private redChartConfig= {lineColor:"#ec250d", pointColor:"#ec250d", stroke1: 'rgba(233,32,16,0.2)', stroke2: 'rgba(233,32,16,0.0)', stroke3: 'rgba(233,32,16,0.0)'};
   private purpleChartConfig= {lineColor:"#a742f5", pointColor: "#a742f0", stroke1: "rgba(165, 55, 253, 0.5)", stroke2: "rgba(165, 55, 253, 0.0)", stroke3: "rgba(165, 55, 253, 0.0)"}
-  constructor() {}
+ //API Request 
+ public getData= this.http.get<any[]>('http://localhost:3000/api/data')
 
-  ngOnInit() {
+ constructor(private http: HttpClient) {}
 
-    var gradientChartOptionsConfigurationWithTooltipBlue: any = {
+ ngOnInit() {
+   this.http.get('http://localhost:3000/api/data').subscribe(
+     data => {
+       let testResponse = data;
+       console.log("I CANT SEE DATA HERE: ", testResponse); 
+     }
+ );
+ 
+ var gradientChartOptionsConfigurationWithTooltipBlue: any = {
       maintainAspectRatio: false,
       legend: {
         display: false
