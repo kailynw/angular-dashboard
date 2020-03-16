@@ -38,6 +38,24 @@ app.get('/api/data', (req,res)=>{
 })
 
 /**
+ * Gets first n-th data sets from cryto data
+ * @return {JSON} n-th Dates and cryto prices
+ */
+app.get('/api/data/:amount',(req,res)=>{
+    cryptoScrape()
+    const cryptoFile = fs.readFileSync('./data/data.json');
+    const data = JSON.parse(cryptoFile);
+    const amount= req.params.amount;
+    let dataSet={}
+
+    for(let i=0; i<amount; i++){
+        dataSet[i]=(data[Object.keys(data)[i]])
+    }
+
+    res.status(200).send(dataSet)
+})
+
+/**
  * Gets most recent cryto data
  * @return {JSON} Date and cryto price
  */
@@ -51,7 +69,6 @@ app.get('/api/data/recent',(req,res)=>{
   
 app.listen(PORT)
 console.log(`GO to http://localhost:${PORT}/api/data`)
-
 
            
 /**
