@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 def main():
         response = requests.get('https://coinmarketcap.com/currencies/bitcoin/historical-data/?start=20130428&end=20200311')
-        with open('coinmarketdata.txt', 'w') as txt:
+        with open('data/coinmarketdata.txt', 'w') as txt:
                 data = response.text
                 soup = BeautifulSoup(data, 'html.parser')
                 td = soup.find_all('td')
@@ -19,9 +19,9 @@ def main():
 
 
 def readcoin():
-    with open('coinmarketdata.txt', 'r') as csvfile:
+    with open('data/coinmarketdata.txt', 'r') as csvfile:
         data = csv.reader(csvfile, delimiter='|')
-        with open('data.csv', 'w') as c:
+        with open('data/data.csv', 'w') as c:
             cwriter = csv.writer(c, delimiter='|')
             i = 0
             l = list()
@@ -40,7 +40,7 @@ def readcoin():
     readdata()
 
 def readdata():
-    data = pd.read_csv("data.csv", delimiter="|")
+    data = pd.read_csv("data/data.csv", delimiter="|")
     print(data)
 
 main()
