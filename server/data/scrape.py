@@ -1,11 +1,13 @@
 import requests
+import datetime
 import csv
 import bs4
 import pandas as pd
 from bs4 import BeautifulSoup
 
 def main():
-        response = requests.get('https://coinmarketcap.com/currencies/bitcoin/historical-data/?start=20130428&end=20200311')
+        date= todaysdate()
+        response = requests.get('https://coinmarketcap.com/currencies/bitcoin/historical-data/?start=20130428&end='+date)
         with open('data/coinmarketdata.txt', 'w') as txt:
                 data = response.text
                 soup = BeautifulSoup(data, 'html.parser')
@@ -17,7 +19,7 @@ def main():
                 txt.close()
         readcoin()
 
-
+  
 def readcoin():
     with open('data/coinmarketdata.txt', 'r') as csvfile:
         data = csv.reader(csvfile, delimiter='|')
@@ -42,5 +44,15 @@ def readcoin():
 def readdata():
     data = pd.read_csv("data/data.csv", delimiter="|")
     print(data)
+
+def todaysdate():
+    now = datetime.datetime.now()
+    year = '{:02d}'.format(now.year)
+    month = '{:02d}'.format(now.month)
+    day = '{:02d}'.format(now.day)
+    hour = '{:02d}'.format(now.hour)
+    minute = '{:02d}'.format(now.minute)
+    date="{}{}{}".format(year,month,day)
+    return date
 
 main()
