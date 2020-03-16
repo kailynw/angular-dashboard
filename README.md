@@ -30,7 +30,7 @@ by [brandon-rowe](https://github.com/brandon-rowe) and [dylan-napoli](https://gi
 git clone https://github.com/brandon-rowe/angular-dashboard
 cd angular-dashboard
 npm install -g @angular/cli
-bash install.bash
+bash ng serinstall.bash
 ```
 
 ## Running Frontend (Angular)
