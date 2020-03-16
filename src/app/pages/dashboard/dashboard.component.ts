@@ -510,6 +510,8 @@ ngOnInit() {
             dateList.push(date)
             priceList.push(price)
           }
+          dateList = dateList.reverse()
+          priceList = priceList.reverse()
 
           resolve({dateList,priceList})
       });
