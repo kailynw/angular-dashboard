@@ -9,8 +9,8 @@ const fs = require('fs');
 
 function cryptoScrape(){
     //Create child process
-    const scrape = execSync('cd data && python3 scrape.py').output
-    const data = execSync('cd data && python3 scrape2json.py').output;
+    const scrape = execSync('python3 ./data/scrape.py').output
+    const data = execSync('python3 ./data/scrape2json.py').output;
 }
 
 
