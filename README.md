@@ -25,16 +25,28 @@ by [brandon-rowe](https://github.com/brandon-rowe) and [dylan-napoli](https://gi
 + [Configure SSL with CertBot Nginx](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04)
 + [Configure Uncomplicated Firewall](https://www.vultr.com/docs/how-to-configure-ufw-firewall-on-ubuntu-14-04)
 
-## Getting started
+## Getting started (Install)
 ```bash
 git clone https://github.com/brandon-rowe/angular-dashboard
 cd angular-dashboard
 npm install -g @angular/cli
-npm install
-ng serve
+sudo bash install.bash
 ```
 
-## Useful Commands
+## Running Frontend (Angular)
+```
+ng serve
+```
+## Running Backend (Node)
+```bash
+cd server/
+npm start
+```
+
+
+---
+## Other
+### Useful Commands
   * `ng serve` - starts a dev server and opens browser with running app
   * `ng build --prod` - build dist folder for web deployment of app
   * `npm start` - starts a dev server and opens browser with running app
@@ -44,7 +56,7 @@ ng serve
   * `npm run prettier` - runs prettier to format whole code base (`.ts` and `.scss`) 
   * `npm run analyze` - runs full prod build and `webpack-bundle-analyzer` to visualize how much code is shipped (dependencies & application) 
 
-## Make It Your Own
+### Make It Your Own
 When using this starter project to build your own app you might consider some of the following steps:
   
   * use `search and replace` functionality of your favourite IDE to replace `anms` with `<your-app-prefix>`
@@ -66,7 +78,7 @@ Based on your preferences and needs you can either:
     with `GH_REF` and `GH_TOKEN` environment variables for automatic deployment of releases to Github Pages
   
 
-## Learning Materials
+### Learning Materials
 Articles with content that explains various approaches used to build this starter project.
 
   * [Blog post about Best Practices for Angular CLI](https://medium.com/@tomastrajan/6-best-practices-pro-tips-for-angular-cli-better-developer-experience-7b328bc9db81) used in this starter project
@@ -76,7 +88,7 @@ Articles with content that explains various approaches used to build this starte
   * [Blog post about unit testing of components with NgRx TestStore](https://medium.com/@tomastrajan/how-to-unit-test-angular-components-with-fake-ngrx-teststore-f0500cc5fc26)
   * [Blog post about Angular CLI budgets](https://medium.com/@tomastrajan/how-did-angular-cli-budgets-save-my-day-and-how-they-can-save-yours-300d534aae7a)
  
-## Features
+### Features
 
 * custom theme support
 * lazy-loading of feature modules
@@ -86,7 +98,7 @@ Articles with content that explains various approaches used to build this starte
 * fully responsive design
 * angular-material and custom components in `SharedModule`
  
-## Stack
+### Stack
 
 * Angular
 * HTML, CSS
@@ -95,7 +107,7 @@ Articles with content that explains various approaches used to build this starte
 * MongoDB
 * Bootstrap 4 (only reset, utils and grids)
 
-## Troubleshooting
+### Troubleshooting
 
 * **Blocking at emitting LicenseWebpackPlugin when npm start** - try using [cnpm](https://github.com/cnpm/cnpm) instead of npm
 <!--
