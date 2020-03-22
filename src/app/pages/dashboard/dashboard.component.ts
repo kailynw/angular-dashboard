@@ -548,8 +548,6 @@ ngOnInit() {
             dateList.push(date)
             priceList.push(price)
           }
-          dateList = dateList.reverse()
-          priceList = priceList.reverse()
 
           //Earliest date to latest
           dateList.reverse()
