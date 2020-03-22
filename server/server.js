@@ -6,6 +6,9 @@ const nodemon= require('nodemon')
 const execSync = require("child_process").execSync
 const fs = require('fs');
 
+//Scrape Cryto Data
+cryptoScrape()
+
 
 //Express Config 
 const app= express()
@@ -30,7 +33,6 @@ app.use((req, res, next) => {
  * @return {JSON} All Dates and cryto prices
  */
 app.get('/api/data', (req,res)=>{
-    cryptoScrape()
     const cryptoFile = fs.readFileSync('./data/data.json');
     const data = JSON.parse(cryptoFile);
     console.log(data)
@@ -42,7 +44,6 @@ app.get('/api/data', (req,res)=>{
  * @return {JSON} n-th Dates and cryto prices
  */
 app.get('/api/data/:amount',(req,res)=>{
-    cryptoScrape()
     const cryptoFile = fs.readFileSync('./data/data.json');
     const data = JSON.parse(cryptoFile);
     const amount= req.params.amount;
@@ -60,7 +61,6 @@ app.get('/api/data/:amount',(req,res)=>{
  * @return {JSON} Date and cryto price
  */
 app.get('/api/data/recent',(req,res)=>{
-    cryptoScrape()
     const cryptoFile = fs.readFileSync('./data/data.json');
     const data = JSON.parse(cryptoFile);
     let recentData= data[Object.keys(data)[0]]

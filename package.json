@@ -1,9 +1,10 @@
 {
   "name": "black-dashboard-angular",
   "version": "1.0.0",
-  "description": "Black Dasboard Angular, a Creative Tim Desgin. Coded by Creative Tim",
+  "description": "Brandon, Kailyn, Dylan",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ng serve"
   },
   "repository": {
     "type": "git",
