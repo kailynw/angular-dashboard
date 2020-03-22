@@ -12,7 +12,10 @@ export class DashboardComponent implements OnInit {
   public canvas : any;
   public ctx;
   public datasets: any;
-  public data: any;
+  public data: any; 
+  public chartLabelSet:any;
+  public currentChartLabel:any;
+  public currentPrice:any;
   public myChartData;
   public clicked: boolean = true;
   public clicked1: boolean = false;
@@ -20,7 +23,7 @@ export class DashboardComponent implements OnInit {
   private tt_default_background= '#f3f3f3';
   private tt_default_title='black'
   private redChartConfig= {lineColor:"#ec250d", pointColor:"#ec250d", stroke1: 'rgba(233,32,16,0.2)', stroke2: 'rgba(233,32,16,0.0)', stroke3: 'rgba(233,32,16,0.0)'};
-  private purpleChartConfig= {lineColor:"#a742f5", pointColor: "#a742f0", stroke1: "rgba(165, 55, 253, 0.5)", stroke2: "rgba(165, 55, 253, 0.0)", stroke3: "rgba(165, 55, 253, 0.0)"}
+  private purpleChartConfig= {lineColor:"#a742f5", pointColor: "#a742f0", stroke1: "rgba(165, 55, 253, 0.2)", stroke2: "rgba(165, 55, 253, 0.0)", stroke3: "rgba(165, 55, 253, 0.0)"}
 
   constructor(private http: HttpClient) {}
 
@@ -397,7 +400,7 @@ ngOnInit() {
 
 
     /***** TOP SHIPMENTS/PERFORMANCE CHART  ******/
-    // var chart_labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+    // var chartLabelSet = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
     // this.datasets = [
     //   [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100],
     //   [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120],
@@ -405,12 +408,28 @@ ngOnInit() {
     // ];
 
     this.setChartData().then(response=>{
-      const priceList=response['priceList']
-      const dateList= response['dateList']
-      console.log(response['priceList'])
-      console.log(response['dateList'])
-      
-      this.data = priceList
+      const sevenDays= response['sevenDays']
+      const thirtyDays= response['thirtyDays']
+      const ninetyDays= response['ninetyDays']
+
+      this.datasets = [
+        sevenDays['priceList'],
+        thirtyDays['priceList'],
+        ninetyDays['priceList']
+      ];
+
+      this.chartLabelSet=[
+        sevenDays['dateList'],
+        thirtyDays['dateList'],
+        ninetyDays['dateList']
+      ];
+
+      console.log(this.chartLabelSet)
+      console.log(this.datasets)
+
+      this.data =this.datasets[0]
+      this.currentChartLabel= this.chartLabelSet[0]
+      this.currentPrice= this.datasets[0][sevenDays['priceList'].length-1];
       this.canvas = document.getElementById("chartBig1");
       this.ctx = this.canvas.getContext("2d");
       var gradientStroke = this.ctx.createLinearGradient(0, 230, 0, 50);
@@ -422,7 +441,7 @@ ngOnInit() {
       var config = {
         type: 'line',
         data: {
-          labels: dateList, 
+          labels: this.currentChartLabel, 
           datasets: [{
             label: "Price ",
             fill: true,
@@ -487,38 +506,55 @@ ngOnInit() {
     });
 
   }
+  
   public updateOptions() {
     this.myChartData.data.datasets[0].data = this.data;
+    this.myChartData.data.labels= this.currentChartLabel;
+
     this.myChartData.update();
   }
 
-  async setChartData(){
-    
+  public async setChartData(){
+      let result:any= {}
+
+      await this.getDataPerPeriod(7).then(response=>{
+        result["sevenDays"]= response
+      })
+
+      await this.getDataPerPeriod(30).then(response=>{
+        result["thirtyDays"]= response
+      })
+
+      await this.getDataPerPeriod(90).then(response=>{
+        result["ninetyDays"]= response
+      })
+
+      return result
+
+
+  }
+
+  public getDataPerPeriod(days){
     let priceList:any=[]
     let dateList:any=[]
-    let amount= 12
 
     return new Promise((resolve, reject)=>{
 
-      this.http.get<any>(`http://localhost:3000/api/data/${amount}`).subscribe(
-        data => {
+      this.http.get<any>(`http://localhost:3000/api/data/${days}`).subscribe(data => {
 
-          for(let i=0; i<amount;i++){
+          for(let i=0; i<days;i++){
             let date=data[i]["Date"]
             let price=parseFloat(data[i]["Open"].replace(/,/g, ''));
-
             dateList.push(date)
             priceList.push(price)
           }
 
+          //Earliest date to latest
+          dateList.reverse()
+          priceList.reverse()
           resolve({dateList,priceList})
-      });
-
-    })
-
-
-
-
-  }
-
+        });
+    });
+  } 
 }
+
