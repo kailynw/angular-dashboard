@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 def main():
         date= todaysdate()
         response = requests.get('https://coinmarketcap.com/currencies/bitcoin/historical-data/?start=20130428&end='+date)
-        with open('data/coinmarketdata.txt', 'w') as txt:
+        with open('bitcoin/coinmarketdata.txt', 'w') as txt:
                 data = response.text
                 soup = BeautifulSoup(data, 'html.parser')
                 td = soup.find_all('td')
@@ -21,9 +21,9 @@ def main():
 
   
 def readcoin():
-    with open('data/coinmarketdata.txt', 'r') as csvfile:
+    with open('bitcoin/coinmarketdata.txt', 'r') as csvfile:
         data = csv.reader(csvfile, delimiter='|')
-        with open('data/data.csv', 'w') as c:
+        with open('bitcoin/data.csv', 'w') as c:
             cwriter = csv.writer(c, delimiter='|')
             i = 0
             l = list()
@@ -42,7 +42,7 @@ def readcoin():
     readdata()
 
 def readdata():
-    data = pd.read_csv("data/data.csv", delimiter="|")
+    data = pd.read_csv("bitcoin/data.csv", delimiter="|")
     print(data)
 
 def todaysdate():
@@ -50,8 +50,6 @@ def todaysdate():
     year = '{:02d}'.format(now.year)
     month = '{:02d}'.format(now.month)
     day = '{:02d}'.format(now.day)
-    hour = '{:02d}'.format(now.hour)
-    minute = '{:02d}'.format(now.minute)
     date="{}{}{}".format(year,month,day)
     return date
 

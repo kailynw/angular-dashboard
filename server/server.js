@@ -33,7 +33,7 @@ app.use((req, res, next) => {
  * @return {JSON} All Dates and cryto prices
  */
 app.get('/api/data', (req,res)=>{
-    const cryptoFile = fs.readFileSync('./data/data.json');
+    const cryptoFile = fs.readFileSync('./bitcoin/data.json');
     const data = JSON.parse(cryptoFile);
     console.log(data)
     res.status(200).send(data)
@@ -44,7 +44,7 @@ app.get('/api/data', (req,res)=>{
  * @return {JSON} n-th Dates and cryto prices
  */
 app.get('/api/data/:amount',(req,res)=>{
-    const cryptoFile = fs.readFileSync('./data/data.json');
+    const cryptoFile = fs.readFileSync('./bitcoin/data.json');
     const data = JSON.parse(cryptoFile);
     const amount= req.params.amount;
     let dataSet={}
@@ -61,7 +61,7 @@ app.get('/api/data/:amount',(req,res)=>{
  * @return {JSON} Date and cryto price
  */
 app.get('/api/data/recent',(req,res)=>{
-    const cryptoFile = fs.readFileSync('./data/data.json');
+    const cryptoFile = fs.readFileSync('./bitcoin/data.json');
     const data = JSON.parse(cryptoFile);
     let recentData= data[Object.keys(data)[0]]
     res.status(200).send(recentData)
@@ -76,6 +76,6 @@ console.log(`GO to http://localhost:${PORT}/api/data`)
  */
 function cryptoScrape(){
     //Create child process
-    const scrape = execSync('python3 ./data/scrape.py').output
-    const writeData = execSync('python3 ./data/scrape2json.py').output;
+    const scrape = execSync('python3 ./bitcoin/scrape.py').output
+    const writeData = execSync('python3 ./bitcoin/scrape2json.py').output;
 }
