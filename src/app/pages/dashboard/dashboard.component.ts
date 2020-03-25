@@ -151,7 +151,7 @@ ngOnInit() {
             zeroLineColor: "transparent",
           },
           ticks: {
-            suggestedMin: 60,
+            suggestedMin: 5000,
             suggestedMax: 125,
             padding: 20,
             fontColor: "#9a9a9a"
@@ -172,6 +172,7 @@ ngOnInit() {
         }]
       }
     };
+    console.log(gradientChartOptionsConfigurationWithTooltipRed.scales.yAxes.ticks)
 
     var gradientChartOptionsConfigurationWithTooltipOrange: any = {
       maintainAspectRatio: false,
@@ -399,14 +400,7 @@ ngOnInit() {
 
 
 
-    /***** TOP SHIPMENTS/PERFORMANCE CHART  ******/
-    // var chartLabelSet = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
-    // this.datasets = [
-    //   [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100],
-    //   [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120],
-    //   [5056, 80, 65, 130, 80, 105, 1616, 130, 70, 115, 60, 130]
-    // ];
-
+    /***** BITCOIN CHART  ******/
     this.setChartData().then(response=>{
       const sevenDays= response['sevenDays']
       const thirtyDays= response['thirtyDays']
@@ -436,8 +430,11 @@ ngOnInit() {
   
       gradientStroke.addColorStop(1,this.purpleChartConfig.stroke1 );
       gradientStroke.addColorStop(0.4, this.purpleChartConfig.stroke2);
-      gradientStroke.addColorStop(0,  this.purpleChartConfig.stroke3); //red colors 
-  
+      gradientStroke.addColorStop(0,  this.purpleChartConfig.stroke3); //purple colors
+
+      //Y-axis scale min
+      gradientChartOptionsConfigurationWithTooltipRed.scales.yAxes[0].ticks.suggestedMin= this.currentPrice
+
       var config = {
         type: 'line',
         data: {
