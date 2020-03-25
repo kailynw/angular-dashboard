@@ -11,6 +11,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   templateUrl: "dashboard.component.html"
 })
 export class DashboardComponent implements OnInit {
+  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
   public canvas : any;
   public ctx;
   public datasets: any;
