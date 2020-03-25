@@ -1,7 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 import Chart from 'chart.js';
-import {HttpClient} from "@angular/common/http"
+import {HttpClient} from "@angular/common/http";
 import { computeMsgId } from '@angular/compiler';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
 
 
 @Component({
@@ -16,6 +18,7 @@ export class DashboardComponent implements OnInit {
   public chartLabelSet:any;
   public currentChartLabel:any;
   public currentPrice:any;
+  public currentCoronaCases:any;
   public myChartData;
   public clicked: boolean = true;
   public clicked1: boolean = false;
@@ -24,6 +27,7 @@ export class DashboardComponent implements OnInit {
   private tt_default_title='black'
   private redChartConfig= {lineColor:"#ec250d", pointColor:"#ec250d", stroke1: 'rgba(233,32,16,0.2)', stroke2: 'rgba(233,32,16,0.0)', stroke3: 'rgba(233,32,16,0.0)'};
   private purpleChartConfig= {lineColor:"#a742f5", pointColor: "#a742f0", stroke1: "rgba(165, 55, 253, 0.2)", stroke2: "rgba(165, 55, 253, 0.0)", stroke3: "rgba(165, 55, 253, 0.0)"}
+  coffee = faCoffee;
 
   constructor(private http: HttpClient) {}
 
@@ -151,7 +155,7 @@ ngOnInit() {
             zeroLineColor: "transparent",
           },
           ticks: {
-            suggestedMin: 5000,
+            suggestedMin: 25,
             suggestedMax: 125,
             padding: 20,
             fontColor: "#9a9a9a"
@@ -172,7 +176,6 @@ ngOnInit() {
         }]
       }
     };
-    console.log(gradientChartOptionsConfigurationWithTooltipRed.scales.yAxes.ticks)
 
     var gradientChartOptionsConfigurationWithTooltipOrange: any = {
       maintainAspectRatio: false,
@@ -320,39 +323,51 @@ ngOnInit() {
     };
 
     /******** TOTOAL SHIPMENTS CHART *******/
-    this.canvas = document.getElementById("chartLineRed");
-    this.ctx = this.canvas.getContext("2d");
-    var gradientStroke = this.ctx.createLinearGradient(0, 230, 0, 50);
 
-    gradientStroke.addColorStop(1, this.redChartConfig.stroke1);
-    gradientStroke.addColorStop(0.4, this.redChartConfig.stroke2);
-    gradientStroke.addColorStop(0,  this.redChartConfig.stroke3); //red colors
+    this.getCoronaDataPerPeriod(7).then(response=>{
+      console.log(response)
+      let dateList= response['dateList']
+      let totalCases= response['totalCases']
+      this.currentCoronaCases= totalCases[totalCases.length-1];
+      console.log(this.currentPrice)
 
-    var data = {
-      labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
-      datasets: [{
-        label: "Data",
-        fill: true,
-        backgroundColor: gradientStroke,
-        borderColor: '#ec250d',
-        borderWidth: 2,
-        borderDash: [],
-        borderDashOffset: 0.0,
-        pointBackgroundColor: '#ec250d',
-        pointBorderColor: 'rgba(255,255,255,0)',
-        pointHoverBackgroundColor: '#ec250d',
-        pointBorderWidth: 20,
-        pointHoverRadius: 4,
-        pointHoverBorderWidth: 15,
-        pointRadius: 4,
-        data: [80, 100, 70, 80, 120, 80],
-      }]
-    };
+      this.canvas = document.getElementById("chartLineRed");
+      this.ctx = this.canvas.getContext("2d");
+      var gradientStroke = this.ctx.createLinearGradient(0, 230, 0, 50);
 
-    var myChart = new Chart(this.ctx, {
-      type: 'line',
-      data: data,
-      options: gradientChartOptionsConfigurationWithTooltipRed
+      gradientStroke.addColorStop(1, this.redChartConfig.stroke1);
+      gradientStroke.addColorStop(0.4, this.redChartConfig.stroke2);
+      gradientStroke.addColorStop(0,  this.redChartConfig.stroke3); //red colors
+      
+      //Y-axis scale min
+      gradientChartOptionsConfigurationWithTooltipRed.scales.yAxes[0].ticks.suggestedMin= this.currentCoronaCases
+
+      var data = {
+        labels: dateList,
+        datasets: [{
+          label: "Effected",
+          fill: true,
+          backgroundColor: gradientStroke,
+          borderColor: '#ec250d',
+          borderWidth: 2,
+          borderDash: [],
+          borderDashOffset: 0.0,
+          pointBackgroundColor: '#ec250d',
+          pointBorderColor: 'rgba(255,255,255,0)',
+          pointHoverBackgroundColor: '#ec250d',
+          pointBorderWidth: 20,
+          pointHoverRadius: 4,
+          pointHoverBorderWidth: 15,
+          pointRadius: 4,
+          data: totalCases,
+        }]
+      };
+
+      var myChart = new Chart(this.ctx, {
+        type: 'line',
+        data: data,
+        options: gradientChartOptionsConfigurationWithTooltipRed
+      });
     });
 
     /***************************************/
@@ -401,7 +416,7 @@ ngOnInit() {
 
 
     /***** BITCOIN CHART  ******/
-    this.setChartData().then(response=>{
+    this.setBitcoinChartData().then(response=>{
       const sevenDays= response['sevenDays']
       const thirtyDays= response['thirtyDays']
       const ninetyDays= response['ninetyDays']
@@ -455,7 +470,8 @@ ngOnInit() {
             pointHoverBorderWidth: 15,
             pointRadius: 4,
             data: this.data,
-          }]
+          }
+        ]
         },
         options: gradientChartOptionsConfigurationWithTooltipRed
       };
@@ -502,6 +518,7 @@ ngOnInit() {
       options: gradientBarChartConfiguration
     });
 
+
   }
   
   public updateOptions() {
@@ -511,18 +528,18 @@ ngOnInit() {
     this.myChartData.update();
   }
 
-  public async setChartData(){
+  public async setBitcoinChartData(){
       let result:any= {}
 
-      await this.getDataPerPeriod(7).then(response=>{
+      await this.getBitcoinDataPerPeriod(7).then(response=>{
         result["sevenDays"]= response
       })
 
-      await this.getDataPerPeriod(30).then(response=>{
+      await this.getBitcoinDataPerPeriod(30).then(response=>{
         result["thirtyDays"]= response
       })
 
-      await this.getDataPerPeriod(90).then(response=>{
+      await this.getBitcoinDataPerPeriod(90).then(response=>{
         result["ninetyDays"]= response
       })
 
@@ -531,13 +548,13 @@ ngOnInit() {
 
   }
 
-  public getDataPerPeriod(days){
+
+  public getBitcoinDataPerPeriod(days){
     let priceList:any=[]
     let dateList:any=[]
 
     return new Promise((resolve, reject)=>{
-
-      this.http.get<any>(`http://localhost:3000/api/data/${days}`).subscribe(data => {
+      this.http.get<any>(`http://localhost:3000/api/bitcoin/${days}`).subscribe(data => {
 
           for(let i=0; i<days;i++){
             let date=data[i]["Date"]
@@ -553,5 +570,30 @@ ngOnInit() {
         });
     });
   } 
+
+  public getCoronaDataPerPeriod(days){
+
+    let totalCases:any= []
+    let dateList:any=[]
+
+    return new Promise((resolve, reject)=>{
+      this.http.get<any>(`http://localhost:3000/api/corona/${days}`).subscribe(data=>{
+
+        for(let i=0; i<days;i++){
+          let cases= data[i]["cases"]
+          let date= data[i]["date"]
+          totalCases.push(cases)
+          dateList.push(date)
+        }
+
+        totalCases.reverse()
+        dateList.reverse()
+        resolve({dateList,totalCases})
+
+      });
+    });
+  }
+
+  
 }
 
