@@ -559,7 +559,7 @@ ngOnInit() {
 
           for(let i=0; i<days;i++){
             let date=data[i]["Date"]
-            let price=parseFloat(data[i]["Open"].replace(/,/g, ''));
+            let price=parseFloat(data[i]["Close"].replace(/,/g, ''));
             dateList.push(date)
             priceList.push(price)
           }

@@ -19,10 +19,10 @@ def get_prev_date(currentDate):
         return "{}-{:02d}-{:02d}".format(currentDateTime.year, currentDateTime.month, currentDateTime.day)
 
 
-def reformat_date(unformated):
-    unformated = unformated.split(sep='-')
-    formated = datetime.datetime(int(unformated[0]), int(unformated[1]), int(unformated[2]))
-    return '{} {}, {}'.format(formated.strftime('%b'), formated.strftime('%d'), formated.strftime('%Y'))
+def reformat_date(unformatted):
+    unformatted = unformatted.split(sep='-')
+    formatted = datetime.datetime(int(unformatted[0]), int(unformatted[1]), int(unformatted[2]))
+    return '{} {}, {}'.format(formatted.strftime('%b'), formatted.strftime('%d'), formatted.strftime('%Y'))
 
 
 def main():
