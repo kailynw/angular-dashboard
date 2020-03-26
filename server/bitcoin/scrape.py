@@ -6,18 +6,18 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 def main():
-        date= todaysdate()
-        response = requests.get('https://coinmarketcap.com/currencies/bitcoin/historical-data/?start=20130428&end='+date)
-        with open('bitcoin/coinmarketdata.txt', 'w') as txt:
-                data = response.text
-                soup = BeautifulSoup(data, 'html.parser')
-                td = soup.find_all('td')
-                for i in td:
-                    value = i.contents[0].contents[0]
-                    input = value + "|"
-                    txt.write(str(input))
-                txt.close()
-        readcoin()
+    date= todaysdate()
+    response = requests.get('https://coinmarketcap.com/currencies/bitcoin/historical-data/?start=20130428&end='+date)
+    with open('bitcoin/coinmarketdata.txt', 'w') as txt:
+        data = response.text
+        soup = BeautifulSoup(data, 'html.parser')
+        td = soup.find_all('td')
+        for i in td:
+            value = i.contents[0].contents[0]
+            input = value + "|"
+            txt.write(str(input))
+        txt.close()
+    readcoin()
 
   
 def readcoin():
