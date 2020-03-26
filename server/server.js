@@ -109,7 +109,6 @@ console.log(`GO to http://localhost:${PORT}/api/bitcoin`)
 function bitcoinScrape(){
     //Create child process
     const scrape = execSync('python3 ./bitcoin/scrape.py').output
-    const writeData = execSync('python3 ./bitcoin/scrape2json.py').output;
 }
 
 function coronaVirusScrape(){

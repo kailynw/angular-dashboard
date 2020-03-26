@@ -1,49 +1,10 @@
 import requests
 import datetime
-import csv
 import bs4
-import pandas as pd
+import json
+import pathlib
 from bs4 import BeautifulSoup
 
-def main():
-    date= todaysdate()
-    response = requests.get('https://coinmarketcap.com/currencies/bitcoin/historical-data/?start=20130428&end='+date)
-    with open('bitcoin/coinmarketdata.txt', 'w') as txt:
-        data = response.text
-        soup = BeautifulSoup(data, 'html.parser')
-        td = soup.find_all('td')
-        for i in td:
-            value = i.contents[0].contents[0]
-            input = value + "|"
-            txt.write(str(input))
-        txt.close()
-    readcoin()
-
-  
-def readcoin():
-    with open('bitcoin/coinmarketdata.txt', 'r') as csvfile:
-        data = csv.reader(csvfile, delimiter='|')
-        with open('bitcoin/data.csv', 'w') as c:
-            cwriter = csv.writer(c, delimiter='|')
-            i = 0
-            l = list()
-            cwriter.writerow(['Date','Open', 'High', 'Low', 'Close' ])
-            for row in data:
-                for word in row:
-                    if(i==5):
-                        i+=1
-                    elif(i==6):
-                        cwriter.writerow(l)
-                        l = list()
-                        i=0
-                    else:
-                        l.append(word)
-                        i+=1
-    readdata()
-
-def readdata():
-    data = pd.read_csv("bitcoin/data.csv", delimiter="|")
-    print(data)
 
 def todaysdate():
     now = datetime.datetime.now()
@@ -52,5 +13,31 @@ def todaysdate():
     day = '{:02d}'.format(now.day)
     date="{}{}{}".format(year,month,day)
     return date
+
+
+def main():
+    jsonFilePath = pathlib.Path('data.json').parent.absolute().as_posix() + '/bitcoin/data.json'
+
+    currentPrice = requests.get('https://api.alternative.me/v2/ticker/bitcoin/').json()['data']['1']['quotes']['USD']['price']
+    todaysDate = datetime.datetime.now()
+    todaysDate = '{} {}, {}'.format(todaysDate.strftime('%b'), todaysDate.strftime('%d'), todaysDate.strftime('%Y'))
+
+    date = todaysdate()
+    response = requests.get('https://coinmarketcap.com/currencies/bitcoin/historical-data/?start=20130428&end='+date).text
+    soup = BeautifulSoup(response, 'html.parser')
+    td = soup.find_all('td')
+    Headers = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume', 'Market Cap']
+    data = {}
+    temp = []
+    data[todaysDate]= {'Date':todaysDate, 'Close': '{:,.2f}'.format(currentPrice)}
+    for i in td:
+        temp.append(i.contents[0].contents[0])
+        if len(temp) == len(Headers):
+            data[temp[0]] = {Headers[0]: temp[0], Headers[1]: temp[1], Headers[2]: temp[2], Headers[3]: temp[3], Headers[4]: temp[4], Headers[5]: temp[5], Headers[6]: temp[6]} 
+            temp = []
+    
+    with open(jsonFilePath, 'w') as jsonFile:
+        jsonFile.write(json.dumps(data, indent=4))
+
 
 main()
