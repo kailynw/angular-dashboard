@@ -3,6 +3,7 @@ const express= require('express')
 const path= require('path')
 const morgan=require('morgan')
 const nodemon= require('nodemon')
+const env= require('dotenv').config()
 const execSync = require("child_process").execSync
 const fs = require('fs');
 
@@ -73,8 +74,16 @@ app.get('/api/bitcoin/recent',(req,res)=>{
 app.get('/api/corona',(req,res)=>{
     const coronaFile= fs.readFileSync('./corona/coronaData.json')
     const data= JSON.parse(coronaFile);
-    data.reverse()
-    res.status(200).send(data)
+    let dataSet={}
+    const end= Object.keys(data).length-1
+    let index=0;
+
+    //Gets data starting from newest to oldest date (reverse JSON)
+    for(let i=end; i>0; i--){
+       dataSet[index]=(data[Object.keys(data)[i]])
+       index++;
+    }
+    res.status(200).send(dataSet)
 })
 
 app.get('/api/corona/:amount',(req,res)=>{
@@ -98,7 +107,7 @@ app.get('/api/corona/:amount',(req,res)=>{
 
   
 app.listen(PORT)
-console.log(`GO to http://localhost:${PORT}/api/bitcoin`)
+console.log(`GO to http://localhost:${process.env.PORT}/api/bitcoin`)
 
 
 

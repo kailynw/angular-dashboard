@@ -11,7 +11,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   templateUrl: "dashboard.component.html"
 })
 export class DashboardComponent implements OnInit {
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  // images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
   public canvas : any;
   public ctx;
   public datasets: any;
@@ -28,12 +28,11 @@ export class DashboardComponent implements OnInit {
   private tt_default_title='black'
   private redChartConfig= {lineColor:"#ec250d", pointColor:"#ec250d", stroke1: 'rgba(233,32,16,0.2)', stroke2: 'rgba(233,32,16,0.0)', stroke3: 'rgba(233,32,16,0.0)'};
   private purpleChartConfig= {lineColor:"#a742f5", pointColor: "#a742f0", stroke1: "rgba(165, 55, 253, 0.2)", stroke2: "rgba(165, 55, 253, 0.0)", stroke3: "rgba(165, 55, 253, 0.0)"}
-  coffee = faCoffee;
-
+  // coffee = faCoffee;
+  private API_HOST:String= this.getApiHost()
   constructor(private http: HttpClient) {}
 
 ngOnInit() {
- 
  var gradientChartOptionsConfigurationWithTooltipBlue: any = {
       maintainAspectRatio: false,
       legend: {
@@ -519,13 +518,16 @@ ngOnInit() {
       options: gradientBarChartConfiguration
     });
 
-
   }
-  
+
+  public getApiHost(){
+    const hostname= window.location.hostname
+    return hostname
+  }
+
   public updateOptions() {
     this.myChartData.data.datasets[0].data = this.data;
     this.myChartData.data.labels= this.currentChartLabel;
-
     this.myChartData.update();
   }
 
@@ -545,8 +547,6 @@ ngOnInit() {
       })
 
       return result
-
-
   }
 
 
@@ -555,7 +555,7 @@ ngOnInit() {
     let dateList:any=[]
 
     return new Promise((resolve, reject)=>{
-      this.http.get<any>(`http://localhost:3000/api/bitcoin/${days}`).subscribe(data => {
+      this.http.get<any>(`/api/bitcoin/${days}`).subscribe(data => {
 
           for(let i=0; i<days;i++){
             let date=data[i]["Date"]
@@ -578,7 +578,7 @@ ngOnInit() {
     let dateList:any=[]
 
     return new Promise((resolve, reject)=>{
-      this.http.get<any>(`http://localhost:3000/api/corona/${days}`).subscribe(data=>{
+      this.http.get<any>(`/api/corona/${days}`).subscribe(data=>{
 
         for(let i=0; i<days;i++){
           let cases= data[i]["cases"]
@@ -595,6 +595,8 @@ ngOnInit() {
     });
   }
 
-  
+  		
+	
+ 
 }
 
