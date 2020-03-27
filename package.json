@@ -4,7 +4,7 @@
   "description": "Brandon, Kailyn, Dylan",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ng serve"
+    "start": "ng serve --proxy-config proxy.conf.json"
   },
   "repository": {
     "type": "git",
