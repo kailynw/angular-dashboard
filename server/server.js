@@ -10,6 +10,10 @@ const fs = require('fs');
 //Scrape Data
 bitcoinScrape()
 coronaVirusScrape()
+fearGreedScrape()
+ethereumScrape()
+xrpScrape()
+btcNewsUpdate()
 
 
 //Express Config 
@@ -105,6 +109,39 @@ app.get('/api/corona/:amount',(req,res)=>{
 })
 
 
+
+app.get('/api/fearGreed',(req,res)=>{
+    const fearFile= fs.readFileSync('./fearGreedIndex/fearGreedIndexData.json')
+    const data= JSON.parse(fearFile);
+    let dataSet={}
+    const end= Object.keys(data).length-1
+
+    //Gets data starting from newest to oldest date (reverse JSON)
+    for(let i=1; i<end; i++){
+       dataSet[index]=(data[Object.keys(data)[i]])
+       index++;
+    }
+    res.status(200).send(dataSet)
+})
+
+app.get('/api/fearGreed/:amount',(req,res)=>{
+    const coronaFile= fs.readFileSync('./fearGreedIndex/fearGreedIndexData.json')
+    const data= JSON.parse(coronaFile);
+    
+    const amount= req.params.amount;
+    let dataSet={}
+    let index=0;
+
+    //Gets data starting from newest to oldest date but skipping first data point. it's the time until next update
+    for(let i=1; i<=amount; i++){
+       dataSet[index]=(data[Object.keys(data)[i]])
+       index++;
+    }
+
+    res.status(200).send(dataSet)
+})
+
+
   
 app.listen(PORT)
 console.log(`GO to http://localhost:${process.env.PORT}/api/bitcoin`)
@@ -124,4 +161,18 @@ function coronaVirusScrape(){
     const writeData= execSync('python3 ./corona/coronaData.py').output
 }
 
+function fearGreedScrape(){
+    const fearGreedData = execSync('python3 ./fearGreedIndex/fearGreedIndexData.py').output
+}
 
+function ethereumScrape(){
+    const ethereumData = execSync('python3 ./ethereum/scrape.py').output
+}
+
+function xrpScrape(){
+    const xrpData = execSync('python3 ./xrp/scrape.py').output
+}
+
+function btcNewsUpdate(){
+    const btcNews = execSync('python3 ./bitcoin/news.py').output
+}
