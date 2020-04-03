@@ -1,6 +1,51 @@
 {
     "time_until_update": {
-        "time_until_update": "13722"
+        "time_until_update": "29012"
+    },
+    "Apr 03, 2020": {
+        "value": "14",
+        "value_classification": "Extreme Fear",
+        "Date": "Apr 03, 2020"
+    },
+    "Apr 02, 2020": {
+        "value": "14",
+        "value_classification": "Extreme Fear",
+        "Date": "Apr 02, 2020"
+    },
+    "Apr 01, 2020": {
+        "value": "12",
+        "value_classification": "Extreme Fear",
+        "Date": "Apr 01, 2020"
+    },
+    "Mar 31, 2020": {
+        "value": "12",
+        "value_classification": "Extreme Fear",
+        "Date": "Mar 31, 2020"
+    },
+    "Mar 30, 2020": {
+        "value": "10",
+        "value_classification": "Extreme Fear",
+        "Date": "Mar 30, 2020"
+    },
+    "Mar 29, 2020": {
+        "value": "12",
+        "value_classification": "Extreme Fear",
+        "Date": "Mar 29, 2020"
+    },
+    "Mar 28, 2020": {
+        "value": "8",
+        "value_classification": "Extreme Fear",
+        "Date": "Mar 28, 2020"
+    },
+    "Mar 27, 2020": {
+        "value": "12",
+        "value_classification": "Extreme Fear",
+        "Date": "Mar 27, 2020"
+    },
+    "Mar 26, 2020": {
+        "value": "14",
+        "value_classification": "Extreme Fear",
+        "Date": "Mar 26, 2020"
     },
     "Mar 25, 2020": {
         "value": "13",
