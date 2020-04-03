@@ -1,5 +1,9 @@
 {
     "ignore": [
-      "data/*"
+      "bitcoin/*",
+      "corona/*",
+      "xrp/*",
+      "ethereum/*",
+      "fearGreedIndex/*"
     ]
   }

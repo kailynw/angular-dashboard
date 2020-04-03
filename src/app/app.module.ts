@@ -10,6 +10,7 @@ import { AdminLayoutComponent } from "./layouts/admin-layout/admin-layout.compon
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
@@ -22,6 +23,7 @@ import { ComponentsModule } from "./components/components.module";
     ComponentsModule,
     NgbModule,
     RouterModule,
+    FontAwesomeModule,
     AppRoutingModule,
     ToastrModule.forRoot()
   ],
