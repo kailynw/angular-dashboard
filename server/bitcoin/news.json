@@ -1,32 +1,32 @@
 {
     "status": "ok",
-    "totalResults": 5017,
+    "totalResults": 5042,
     "articles": [
         {
             "source": {
                 "id": null,
-                "name": "Fark.com"
+                "name": "Forbes.com"
             },
-            "author": null,
-            "title": "Brutal Trump attack ad made by Biden campaign, eh, Democratic National Committee, um, Bloomberg, er, Republicans? [Hero]",
-            "description": "Brutal Trump attack ad made by Biden campaign, eh, Democratic National Committee, um, Bloomberg, er, Republicans?",
-            "url": "https://www.fark.com/comments/10767461/Brutal-Trump-attack-ad-made-by-Biden-campaign-eh-Democratic-National-Committee-um-Bloomberg-er-Republicans",
-            "urlToImage": "https://img.fark.net/images/2013/site/farkLogo2Big.gif",
-            "publishedAt": "2020-04-03T19:07:24Z",
-            "content": "jerryskid:SpectroBoy: Wow, they found a handful of republicans who can learn.\r\nThe rest are hopeless.\r\nI don't believe it.\u00a0 It's a trick.\u00a0 republicans are incapable of ever learning.\u00a0 They're probably Canadians imported to make that video.\r\nMaybe it's just a \u2026 [+111 chars]"
+            "author": "Jason Brett, Contributor, Jason Brett, Contributor https://www.forbes.com/sites/jasonbrett/",
+            "title": "Setback For Crypto Progress In D.C. As Kelly Loeffler Defends Stock Trading",
+            "description": "It is a special event to run into a U.S. Senator who understands cryptocurrency or blockchain. It was a once in a lifetime event to watch Kelly Loeffler, former CEO of a major cryptocurrency exchange that successfully navigated U.S. regulations, sworn in as a\u2026",
+            "url": "https://www.forbes.com/sites/jasonbrett/2020/04/03/setback-for-crypto-progress-in-dc--as-kelly-loeffler-defends-stock-trading/",
+            "urlToImage": "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F1207820037%2F0x0.jpg",
+            "publishedAt": "2020-04-03T22:35:13Z",
+            "content": "It is a special event to run into a U.S. Senator who understands cryptocurrency or blockchain. It was a once in a lifetime event to watch Kelly Loeffler, former CEO of a major cryptocurrency exchange that successfully navigated U.S. regulations, sworn in as a\u2026 [+4084 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Seekingalpha.com"
+                "name": "Forbes.com"
             },
-            "author": "Financial Freedom Institute",
-            "title": "Bitcoin Is Not A Store Of Value",
-            "description": "A common Bitcoin bull claim is that Bitcoin is a store of value.We dispute that claim.\"Value\" is not maintained in something with Bitcoin's degree of volatility.At best, Bitcoin is a means of exchange and a lousy one at that.",
-            "url": "https://seekingalpha.com/article/4335905-bitcoin-is-not-store-of-value",
-            "urlToImage": "https://static2.seekingalpha.com/images/marketing_images/fair_use_logos_products/sacl_bitcoin_bitcoin.jpeg",
-            "publishedAt": "2020-04-03T19:06:05Z",
-            "content": "Apparently, we are the rare Bitcoin (BTC-USD) bear here on Seeking Alpha, and our last article generated quite a lot of consternation from bulls.\r\nToday, we address the Bitcoin bull claim that Bitcoin is a \"store of value\".\r\nWe disagree. In fact, we don't bel\u2026 [+4119 chars]"
+            "author": "Justin O'Connell, Contributor, Justin O'Connell, Contributor https://www.forbes.com/sites/justinoconnell/",
+            "title": "Coinbase Co-Founder Invests In Project To Bridge Bitcoin And Ethereum",
+            "description": "The Keep network, a privacy layer for Ethereum, has closed a private $7.7M token sale led by Paradigm, Fenbushi Capital, ParaFI Capital, A. Capital, and Collaborative Fund.",
+            "url": "https://www.forbes.com/sites/justinoconnell/2020/04/03/coinbase-co-founder-invests-in-project-to-bridge-bitcoin-and-ethereum/",
+            "urlToImage": "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e87acbabf94c200067fcf33%2F0x0.jpg",
+            "publishedAt": "2020-04-03T22:18:09Z",
+            "content": "The Keep Network, a privacy layer for Ethereum, has closed a private $7.7M token sale led by Paradigm, Fenbushi Capital, ParaFI Capital, A.Capital, and Collaborative Fund. The Keep Network is an open-source contributor to the tBTC project, which enables Bitco\u2026 [+4919 chars]"
         },
         {
             "source": {
@@ -35,37 +35,11 @@
             },
             "author": "Pranav Ghumatkar",
             "title": "On the hour",
-            "description": "<ul><li>Dow <font color=\"red\">-1.55%</font>.</li><li>10-yr <font color=\"green\">+0.07%</font>.</li><li>Euro <font color=\"red\">-0.4%</font> vs. dollar.</li><li>Crude <font color=\"green\">+12.91%</font> to $28.59.</li><li>Gold <font color=\"green\">+0.68%</font> to\u2026",
-            "url": "https://seekingalpha.com/news/3558346-on-hour",
+            "description": "<ul><li>S&P <font color=\"red\">-1.45%</font>.</li><li>10-yr <font color=\"red\">0%</font>.</li><li>Euro <font color=\"red\">-0.47%</font> vs. dollar.</li><li>Crude <font color=\"green\">+14.42%</font> to $28.97.</li><li>Gold <font color=\"green\">+0.67%</font> to $1,6\u2026",
+            "url": "https://seekingalpha.com/news/3558403-on-hour",
             "urlToImage": "https://static3.seekingalpha.com/assets/og_image_192-59bfd51c9fe6af025b2f9f96c807e46f8e2f06c5ae787b15bf1423e6c676d4db.png",
-            "publishedAt": "2020-04-03T19:00:54Z",
-            "content": "Dow -1.55%.\r\n10-yr +0.07%.\r\nEuro -0.4% vs. dollar.\r\nCrude +12.91% to $28.59.\r\nGold +0.68% to $1,648.90.\r\nBitcoin -0.41% to $6,783."
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Coindesk.com"
-            },
-            "author": "Nathaniel Whittemore",
-            "title": "Will DeFi Matter in a Post-Coronavirus World? Feat. Matt Luongo",
-            "description": "Keep Project founder Matt Luongo discusses launching a bridge between bitcoin and ethereum as well as what the world looks like for BTC and DeFi after COVID-19.",
-            "url": "https://www.coindesk.com/will-defi-matter-in-a-post-coronavirus-world-feat-matt-luongo",
-            "urlToImage": "https://www.coindesk.com/wp-content/uploads/2020/04/Breakdown4.3-4-1200x628.jpg",
-            "publishedAt": "2020-04-03T19:00:00Z",
-            "content": "Keep Project founder Matt Luongo discusses launching a bridge between bitcoin (BTC) and ethereum (ETH) as well as what the world looks like for BTC and DeFi after COVID-19.\r\nFor more episodes and free early access before our regular 3 p.m. Eastern time releas\u2026 [+1414 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Coinbase.com"
-            },
-            "author": "Coinbase",
-            "title": "Crypto giveaway scams and how to spot them",
-            "description": "By Thomas Hauer, Jr.\nCryptocurrency giveaway scams have been a problem for those involved in the crypto-community since the last major bull run in late 2017. Whether you\u2019re a seasoned investor or\u2026",
-            "url": "https://blog.coinbase.com/crypto-giveaway-scams-and-how-to-spot-them-c98a6088b617",
-            "urlToImage": "https://miro.medium.com/max/1198/0*dYt3f_YokOO3XtUw.png",
-            "publishedAt": "2020-04-03T18:50:41Z",
-            "content": "By Thomas Hauer, Jr.Cryptocurrency giveaway scams have been a problem for those involved in the crypto-community since the last major bull run in late 2017. Whether youre a seasoned investor or just beginning to get your feet wet in the crypto-space, we encou\u2026 [+4906 chars]"
+            "publishedAt": "2020-04-03T22:00:39Z",
+            "content": "S&amp;P -1.45%.\r\n10-yr 0%.\r\nEuro -0.47% vs. dollar.\r\nCrude +14.42% to $28.97.\r\nGold +0.67% to $1,648.75.\r\nBitcoin -1.39% to $6,753."
         },
         {
             "source": {
@@ -73,77 +47,64 @@
                 "name": "Newsbtc.com"
             },
             "author": "Cole Petersen",
-            "title": "XRP Could be Poised for a 20% Rally as Bullish Undercurrent Emerges",
-            "description": "It has been an interesting week for XRP, with the Ripple-associated token seeing some unique turbulence that allowed it to rally independent of the aggregated crypto market late-last week before once again reestablishing a close correlation to Bitcoin. This p\u2026",
-            "url": "https://www.newsbtc.com/2020/04/03/xrp-could-be-poised-for-a-20-rally-as-bullish-undercurrent-emerges/",
-            "urlToImage": "https://www.newsbtc.com/wp-content/uploads/2020/03/shutterstock_1124255333-1200x780.jpg",
-            "publishedAt": "2020-04-03T18:30:22Z",
-            "content": "It has been an interesting week for XRP, with the Ripple-associated token seeing some unique turbulence that allowed it to rally independent of the aggregated crypto market late-last week before once again reestablishing a close correlation to Bitcoin.\r\nThis \u2026 [+2233 chars]"
+            "title": "Bitcoin Whale: World is in for \u201cBiggest Economic Shock\u201d in Generations",
+            "description": "It feels as though the past couple of months have marked the end of an era, and one prominent Bitcoin whale is now noting that he believes the world is about to incur one of the biggest economic shocks seen in generations. This may fundamentally alter the str\u2026",
+            "url": "https://www.newsbtc.com/2020/04/03/bitcoin-whale-world-is-in-for-biggest-economic-shock-in-generations/",
+            "urlToImage": "https://www.newsbtc.com/wp-content/uploads/2020/04/shutterstock_1416555035-1200x780.jpg",
+            "publishedAt": "2020-04-03T22:00:31Z",
+            "content": "It feels as though the past couple of months have marked the end of an era, and one prominent Bitcoin whale is now noting that he believes the world is about to incur one of the biggest economic shocks seen in generations.\r\nThis may fundamentally alter the st\u2026 [+2955 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Cdc.gov"
+                "name": "Cointelegraph.com"
+            },
+            "author": "Cointelegraph By Helen Partz",
+            "title": "Binance Shelters Against Job Losses During Global Pandemic",
+            "description": "Crypto industry keeps sheltering against pandemic-fueled unemployment, with Binance announcing more than 100 new hires over the world",
+            "url": "https://cointelegraph.com/news/binance-shelters-against-job-losses-during-global-pandemic",
+            "urlToImage": "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy82MmQzNGMxM2EwMzRkZDM3ZjA3ZDNiN2YyMGMwYmYxOS5qcGc=.jpg",
+            "publishedAt": "2020-04-03T21:57:00Z",
+            "content": "While global unemployment continues hitting new highs amid the coronavirus pandemic, the cryptocurrency industry is stepping in to shelter job losses, with some of the biggest companies in the space announcing their intention to hire new employees.\r\nBinance, \u2026 [+2645 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Wordpress.com"
             },
             "author": null,
-            "title": "COVID-19-Related Phone Scams and Phishing Attacks",
-            "description": "CDC public health news, press releases, government public health news, medical and disease news, story ideas, photos.",
-            "url": "https://www.cdc.gov/media/phishing.html",
-            "urlToImage": null,
-            "publishedAt": "2020-04-03T18:24:04Z",
-            "content": "CDC security officials have been working with multiple law enforcement agencies to track a campaign of phishing emails claiming to be from the CDC that reference a flu pandemic. The body of the email instructs the user to open an attached Microsoft Office doc\u2026 [+1211 chars]"
+            "title": "We Recovered over $300K of Bitcoin",
+            "description": "Story time! Around twenty years ago, I was working as a reverse-engineer and cryptanalyst for AccessData while getting my Physics degree at BYU. It was the late 90s and early 2000s. The US governme\u2026",
+            "url": "https://reperiendi.wordpress.com/2020/04/03/how-i-recovered-over-300k-of-bitcoin/",
+            "urlToImage": "https://s0.wp.com/i/blank.jpg",
+            "publishedAt": "2020-04-03T21:20:51Z",
+            "content": "Story time! Around twenty years ago, I was working as a reverse-engineer and cryptanalyst for AccessData while getting my Physics degree at BYU. It was the late 90s and early 2000s. The US government had been gradually easing off export restrictions on softwa\u2026 [+13339 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Unity.com"
+                "name": "Digitalshadows.com"
             },
-            "author": "ultraboostdevice",
-            "title": "Can you make money with Bitcoin Storm?",
-            "description": "There are tons of different Bitcoin Storm robots out there that claim to be the best bang for your buck. However, a good amount of them are scams and will not make you any money on your investments. Bitcoin Storm appears to be a legitimate bot claims to bring\u2026",
-            "url": "http://answers.unity.com/questions/1714233/can-you-make-money-with-bitcoin-storm-1.html",
-            "urlToImage": null,
-            "publishedAt": "2020-04-03T18:21:09Z",
-            "content": null
+            "author": null,
+            "title": "Recon: Dark web reconnaissance made to look easy",
+            "description": "This new trend in dark web market search engines, pioneered by the now-defunct Grams and followed by its likely successor Kilos, sees services offering a large index of marketplaces, vendors, listings, reviews, and advanced filter functions affiliated with th\u2026",
+            "url": "https://www.digitalshadows.com/blog-and-research/recon-dark-web-reconnaissance-made-to-look-easy/",
+            "urlToImage": "https://www.digitalshadows.com/uploads/2020/04/Recon\u2019s-interface-showing-current-index-statistics-1.png",
+            "publishedAt": "2020-04-03T21:19:00Z",
+            "content": "Just as the rest of us enjoy the ease of obtaining all sorts of products provided by the countless e-commerce services, threat actors also seem to relish care-free, low-risk ways to buy illicit products. Buoyed by a desire to avoid falling victim to a scam, t\u2026 [+4688 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Cointelegraph.com"
+                "name": "Uol.com.br"
             },
-            "author": "Cointelegraph By Rakesh Upadhyay",
-            "title": "Price Analysis April 3: BTC, ETH, XRP, BCH, BSV, LTC, EOS, BNB, XTZ, LEO",
-            "description": "Bitcoin price continues to push higher but major cryptocurrencies should sustain above their 20-day EMA to confirm that the downtrend might be over",
-            "url": "https://cointelegraph.com/news/price-analysis-april-3-btc-eth-xrp-bch-bsv-ltc-eos-bnb-xtz-leo",
-            "urlToImage": "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9jOWFkNjdjMmY1NTA0ZWQxNmVlNDMzYWVmOGZlY2U4YS5qcGc=.jpg",
-            "publishedAt": "2020-04-03T18:19:00Z",
-            "content": "On April 2 the U.S. Labor Department reported that the U.S. weekly jobless claims skyrocketed to 6.6 million. In the previous week, the claims stood at 3.3 million, meaning over the past two weeks the number of laid off American workers seeking unemployment b\u2026 [+9103 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Cointelegraph.com"
-            },
-            "author": "Cointelegraph By Joseph Young",
-            "title": "Past Halvings in Review: Case for an Immediate Bitcoin Upsurge Is Flawed",
-            "description": "Historical data from 2012 and 2016 shows that Bitcoin\u2019s price is unlikely to see a big spike after the May halving",
-            "url": "https://cointelegraph.com/news/past-halvings-in-review-case-for-an-immediate-bitcoin-upsurge-is-flawed",
-            "urlToImage": "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy8zZDg2ZDcyMTEwNThlYWZmYTFkNWI1ODIwMzJjOGMzMS5qcGc=.jpg",
-            "publishedAt": "2020-04-03T18:10:00Z",
-            "content": "The block reward halving of Bitcoin (BTC) has long been touted as an optimistic factor to drive the short-term price trend of BTC in the first half of 2020. Historical data, however, shows that the halving does not necessarily coincide with an immediate upsur\u2026 [+7000 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Bitcoinist.com"
-            },
-            "author": "Trevor Smith",
-            "title": "3 Major Developments That Will Change How You Use Bitcoin",
-            "description": "For all of its revolutionary potential, Bitcoin remains a work in progress. Its long, and often contentious development has been the subject of immense debate among both supporters and critics. Several emerging steps along its march to completion will soon be\u2026",
-            "url": "https://bitcoinist.com/3-major-developments-that-will-change-how-you-use-bitcoin/",
-            "urlToImage": "https://bitcoinist.com/wp-content/uploads/2020/03/5-March-5.jpg",
-            "publishedAt": "2020-04-03T18:00:06Z",
-            "content": "For all of its revolutionary potential, Bitcoin remains a work in progress. Its long, and often contentious development has been the subject of immense debate among both supporters and critics. Several emerging steps along its march to completion will soon be\u2026 [+3788 chars]"
+            "author": null,
+            "title": "M. Vasconcellos | A ind\u00fastria da sa\u00fade vai ser chacoalhada",
+            "description": "Em compara\u00e7\u00e3o com o in\u00edcio do ano, as a\u00e7\u00f5es ordin\u00e1rias da Notre Dame Interm\u00e9dica e Hapvida ca\u00edram 41%, enquanto o Ibovespa registrou queda de 40%",
+            "url": "https://www1.folha.uol.com.br/colunas/marcos-de-vasconcellos/2020/04/a-industria-da-saude-vai-ser-chacoalhada-e-parece-que-deveria-estar-fazendo-mais.shtml",
+            "urlToImage": "https://f.i.uol.com.br/fotografia/2020/03/27/15853600855e7eacd57f201_1585360085_3x2_rt.jpg",
+            "publishedAt": "2020-04-03T21:00:49Z",
+            "content": "Nada de ouro, d\u00f3lar, joias ou bitcoin. O bem mais desejado dos pr\u00f3ximos dias ser\u00e1 um leito hospitalar. Num cada vez mais raro momento de converg\u00eancia, os governos federal e de S\u00e3o Paulo preveem que o pico de contamina\u00e7\u00f5es pelo coronav\u00edrus ser\u00e1 entre 45 e 90 d\u2026 [+3934 chars]"
         },
         {
             "source": {
@@ -152,115 +113,154 @@
             },
             "author": "Pranav Ghumatkar",
             "title": "On the hour",
-            "description": "<ul><li>Dow <font color=\"red\">-2.09%</font>.</li><li>10-yr <font color=\"green\">+0.17%</font>.</li><li>Euro <font color=\"red\">-0.52%</font> vs. dollar.</li><li>Crude <font color=\"green\">+8.89%</font> to $27.57.</li><li>Gold <font color=\"green\">+0.39%</font> to\u2026",
-            "url": "https://seekingalpha.com/news/3558334-on-hour",
+            "description": "<ul><li>S&P <font color=\"red\">-1.45%</font>.</li><li>10-yr <font color=\"red\">0%</font>.</li><li>Euro <font color=\"red\">-0.47%</font> vs. dollar.</li><li>Crude <font color=\"green\">+14.42%</font> to $28.97.</li><li>Gold <font color=\"green\">+0.67%</font> to $1,6\u2026",
+            "url": "https://seekingalpha.com/news/3558391-on-hour",
             "urlToImage": "https://static3.seekingalpha.com/assets/og_image_192-59bfd51c9fe6af025b2f9f96c807e46f8e2f06c5ae787b15bf1423e6c676d4db.png",
-            "publishedAt": "2020-04-03T18:00:03Z",
-            "content": "Dow -2.09%.\r\n10-yr +0.17%.\r\nEuro -0.52% vs. dollar.\r\nCrude +8.89% to $27.57.\r\nGold +0.39% to $1,644.10.\r\nBitcoin -5.24% to $6,734."
+            "publishedAt": "2020-04-03T21:00:32Z",
+            "content": "S&amp;P -1.45%.\r\n10-yr 0%.\r\nEuro -0.47% vs. dollar.\r\nCrude +14.42% to $28.97.\r\nGold +0.67% to $1,648.75.\r\nBitcoin -1.01% to $6,704."
         },
         {
             "source": {
                 "id": null,
-                "name": "Businesswire.com"
+                "name": "Terra.com.br"
             },
-            "author": null,
-            "title": "BitHull Overtakes ASIC Market with New FPGA Miners",
-            "description": "COPENHAGEN, Denmark--(BUSINESS WIRE)--BitHull S.A. ( www.BitHull.com ) is pleased to announce the launch of its two new crypto miners BH Miner and BH Miners Box. These miners have been built around Field Programmable Gate Array or FPGA mining technology, the \u2026",
-            "url": "https://www.businesswire.com/news/home/20200403005458/en/BitHull-Overtakes-ASIC-Market-New-FPGA-Miners",
-            "urlToImage": "http://www.businesswire.com/images/bwlogo_square.png",
-            "publishedAt": "2020-04-03T17:56:09Z",
-            "content": "COPENHAGEN, Denmark--(BUSINESS WIRE)--BitHull S.A. ( www.BitHull.com ) is pleased to announce the launch of its two new crypto miners BH Miner and BH Miners Box. These miners have been built around Field Programmable Gate Array or FPGA mining technology, the \u2026 [+1716 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Coindesk.com"
-            },
-            "author": "Omkar Godbole",
-            "title": "Ether-Bitcoin Price Volatility Spread Hits 4-Month Low",
-            "description": "Some cryptocurrencies are hairier rides than others. But there may not be much difference in price volatility between bitcoin and ether in the months ahead.",
-            "url": "https://www.coindesk.com/ether-bitcoin-price-volatility-spread-hits-4-month-low",
-            "urlToImage": "https://www.coindesk.com/wp-content/uploads/2018/03/coaster-1200x628.jpg",
-            "publishedAt": "2020-04-03T17:55:03Z",
-            "content": "Cryptocurrency prices have always been roller coasters, and some rides are scarier than others.\u00a0However, there may not be much difference in price volatility between the top two coins in the coming months, a key metric indicates. \r\nThe spread between the thre\u2026 [+4126 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Cointelegraph.com"
-            },
-            "author": "Cointelegraph By Gareth Jenkinson",
-            "title": "South African National Blockchain Alliance Holds Online Launch",
-            "description": "The South African National Blockchain Alliance has been launched to drive technology development by bringing public and private enterprises together",
-            "url": "https://cointelegraph.com/news/south-african-national-blockchain-alliance-holds-online-launch",
-            "urlToImage": "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9lZjAyY2M5MGMyYmZkNzhkOTFkMjg1NTM1ZTU5YmQ2OS5qcGc=.jpg",
-            "publishedAt": "2020-04-03T17:50:00Z",
-            "content": "The South African National Blockchain Alliance carried out an online livestream launch while the country is in the midst of a 21-day lockdown to curb the spread of the coronavirus pandemic. The organization was due to be launched at the beginning of April in \u2026 [+11120 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Coindesk.com"
-            },
-            "author": "Brady Dale",
-            "title": "Blockchain Gaming, Messaging Apps See User Growth Amid Coronavirus Lockdowns",
-            "description": "Coronavirus lockdowns have led to a relative surge in a small corner of the cryptocurrency space: its more casual and entertaining end.",
-            "url": "https://www.coindesk.com/blockchain-gaming-messaging-apps-see-user-growth-amid-coronavirus-lockdowns",
-            "urlToImage": "https://www.coindesk.com/wp-content/uploads/2020/04/cryptovoxels-users-1200x628.jpg",
-            "publishedAt": "2020-04-03T17:38:50Z",
-            "content": "Screen time around the world is way, way up, which has led to a relative surge in a small corner of the cryptocurrency space, its more casual and entertaining one.\r\nThe irony here is that bitcoin was born from an economic downturn, and most diehards would hav\u2026 [+6520 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Nypost.com"
-            },
-            "author": "Ben Feuerherd",
-            "title": "Feds say Russian rapper laundered money, flaunted wealth online",
-            "description": "Maksim Boiko, 29, allegedly worked with the transnational money-laundering operation QQAAZZ after arriving in the United States in January, according to a criminal complaint unsealed on Monday by federal prosecutors in Pennsylvania.",
-            "url": "https://nypost.com/2020/04/03/russian-rapper-laundered-money-flaunted-on-instagram-feds/",
-            "urlToImage": "https://thenypost.files.wordpress.com/2020/04/russian-rapper-01.jpg?quality=90&strip=all&w=1200",
-            "publishedAt": "2020-04-03T17:17:50Z",
-            "content": "A Russian wannabe rapper living in Florida allegedly laundered money for a shadowy organized crime outfit while posting about his flashy lifestyle on Instagram, federal authorities charged this week.\r\nMaksim Boiko, 29, allegedly worked with the transnational \u2026 [+1556 chars]"
+            "author": "DINO",
+            "title": "BitHull Ultrapassa Mercado ASIC com Novos Mineradores de FPGA",
+            "description": "BitHull S.A. (www.BitHull.com) tem o prazer de anunciar o lan\u00e7amento de seus dois novos mineradores de criptografia BH Miner e BH Miners Box. Estes minerado",
+            "url": "https://www.terra.com.br/noticias/dino/bithull-ultrapassa-mercado-asic-com-novos-mineradores-de-fpga,7e68a0aa542124f0cd6985e35563c110xm78drw8.html",
+            "urlToImage": "http://p2.trrsf.com/image/fget/cf/800/450/middle/s1.trrsf.com/atm/3/core/_img/terra-logo-white-bg-v3.jpg",
+            "publishedAt": "2020-04-03T20:50:05Z",
+            "content": "BitHull S.A. (www.BitHull.com) tem o prazer de anunciar o lan\u00e7amento de seus dois novos mineradores de criptografia BH Miner e BH Miners Box. Estes mineradores foram constru\u00eddos com base na tecnologia de minera\u00e7\u00e3o Programmable Gate Array ou FPGA em campo, a m\u2026 [+2373 chars]"
         },
         {
             "source": {
                 "id": null,
                 "name": "Newsbtc.com"
             },
-            "author": "Tony Spilotro",
-            "title": "Analyst: Moon Mission For Tezos Cryptocurrency Following Hammer Reversal",
-            "description": "The cryptocurrency Tezos has only just come back down to Earth after spending early 2020 skyrocketing to new highs, but according to one crypto analyst, a moon mission may be next for the hyped-up altcoin following an inverted hammer reversal candle. Cryptocu\u2026",
-            "url": "https://www.newsbtc.com/2020/04/03/analyst-moon-mission-for-tezos-cryptocurrency-following-hammer-reversal/",
-            "urlToImage": "https://www.newsbtc.com/wp-content/uploads/2020/04/tezos-cryptocurrency-moon-mission-shutterstock_355250210-1200x780.jpg",
-            "publishedAt": "2020-04-03T17:00:28Z",
-            "content": "The cryptocurrency Tezos has only just come back down to Earth after spending early 2020 skyrocketing to new highs, but according to one crypto analyst, a moon mission may be next for the hyped-up altcoin following an inverted hammer reversal candle.\r\nCryptoc\u2026 [+2776 chars]"
+            "author": "Cole Petersen",
+            "title": "Bitcoin Forms Bullish Weekly Candle but One Factor Could Spoil Its Uptrend",
+            "description": "Bitcoin has once again found itself caught within a bout of sideways trading within the upper-$6,000 region following yesterday\u2019s firm rejection at $7,300. Although the technical damage done by this movement appeared to be overtly bearish, BTC has been able t\u2026",
+            "url": "https://www.newsbtc.com/2020/04/03/bitcoin-forms-bullish-weekly-candle-but-one-factor-could-spoil-its-uptrend/",
+            "urlToImage": "https://www.newsbtc.com/wp-content/uploads/2020/03/shutterstock_673449193-1200x780.jpg",
+            "publishedAt": "2020-04-03T20:45:55Z",
+            "content": "Bitcoin has once again found itself caught within a bout of sideways trading within the upper-$6,000 region following yesterdays firm rejection at $7,300. Although the technical damage done by this movement appeared to be overtly bearish, BTC has been able to\u2026 [+2468 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Seekingalpha.com"
+                "name": "Cointelegraph.com"
             },
-            "author": "Andrew Hecht",
-            "title": "Precious Metals And Cryptocurrencies - First Quarter 2020 Review",
-            "description": "Precious metals move 5.44% lower in Q1.Palladium continues to lead on the upside with a double-digit percentage gain.Gold rises 3.96%.Platinum plunges 25.43%.Silver falls 21.01% over the first three months of 2020.",
-            "url": "https://seekingalpha.com/article/4335874-precious-metals-and-cryptocurrencies-first-quarter-2020-review",
-            "urlToImage": "https://static.seekingalpha.com/uploads/2020/4/2/6915901-15858493068867877_origin.png",
-            "publishedAt": "2020-04-03T17:00:11Z",
-            "content": "The precious metals sector of the commodities market posted a loss over the first quarter of 2020 despite gains in palladium and gold. Rhodium moved higher, but silver and platinum both fell sharply.\r\nThe spectacular rise in digital currencies throughout 2017\u2026 [+17623 chars]"
+            "author": "Cointelegraph By Joseph Young",
+            "title": "2 Reasons a Deeper Correction in Stocks May End Bitcoin\u2019s Rally to $8K",
+            "description": "Bitcoin price could see a rally to $8,000 following the breakout to $7,000, but a potential selloff in stocks could put BTC at risk of revisiting new lows",
+            "url": "https://cointelegraph.com/news/2-reasons-a-deeper-correction-in-stocks-may-end-bitcoins-rally-to-8k",
+            "urlToImage": "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9lNDYyZTljODI4NTA1ODdkYTVlZmI3MzBjOTkyMTk5ZS5qcGc=.jpg",
+            "publishedAt": "2020-04-03T20:41:00Z",
+            "content": "The Bitcoin price (BTC) rallied to around $7,300 on April 3, and BTC is still holding onto the $6,700 support level, meaning the price could push the dominant cryptocurrency to the $8,000 area. But, a highly accurate hedge fund manager\u2019s stock market warning \u2026 [+2994 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Seekingalpha.com"
+                "name": "Yahoo.com"
             },
-            "author": "Andrew Hecht",
-            "title": "Precious Metals And Cryptocurrencies - First Quarter 2020 Review",
-            "description": "Precious metals move 5.44% lower in Q1.Palladium continues to lead on the upside with a double-digit percentage gain.Gold rises 3.96%.Platinum plunges 25.43%.Silver falls 21.01% over the first three months of 2020.",
-            "url": "https://seekingalpha.com/article/4335874-precious-metals-and-cryptocurrencies-first-quarter-2020-review",
-            "urlToImage": "https://static.seekingalpha.com/uploads/2020/4/2/6915901-15858493068867877_origin.png",
-            "publishedAt": "2020-04-03T17:00:11Z",
-            "content": "The precious metals sector of the commodities market posted a loss over the first quarter of 2020 despite gains in palladium and gold. Rhodium moved higher, but silver and platinum both fell sharply.\r\nThe spectacular rise in digital currencies throughout 2017\u2026 [+17623 chars]"
+            "author": "Yilun Cheng",
+            "title": "Blockchain firm Factom begins dissolution process after failing to source additional funding",
+            "description": "Blockchain firm Factom has begun the process of dissolution following its failure to solicit additional funding to address its dire financial situation. The post Blockchain firm Factom begins dissolution process after failing to source additional funding appe\u2026",
+            "url": "https://finance.yahoo.com/news/blockchain-firm-factom-begins-dissolution-202838955.html",
+            "urlToImage": "https://s.yimg.com/ny/api/res/1.2/_o2qE5dQPIiB8zBzg.DABg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyODA7aD03MjA-/https://s.yimg.com/uu/api/res/1.2/w3S_jwGfoFdxLomWjPhZFg--~B/aD00NTA7dz04MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-US/the_block_83/6cef8f14ba17f9174a4c53a7085521e4",
+            "publishedAt": "2020-04-03T20:28:38Z",
+            "content": "Blockchain firm Factom has begun the process of dissolution following its failure to solicit additional funding to address its dire financial situation, according to a key investor.\u00a0\r\nEstablished in 2014, Factom offers data provenance and integrity solutions \u2026 [+1931 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Cointelegraph.com"
+            },
+            "author": "Cointelegraph By Benjamin Pirus",
+            "title": "Exchange CEO Forecasts Crypto Market Uptick in Coming Weeks",
+            "description": "AAX exchange CEO Thor Chan thinks crypto markets will do well, despite recent and current uncertainty",
+            "url": "https://cointelegraph.com/news/exchange-ceo-forecasts-crypto-market-uptick-in-coming-weeks",
+            "urlToImage": "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy8yZTliZTNmYzExZTY5NWZhMzRlZjc3MWQ4MmU0N2RhZS5qcGc=.jpg",
+            "publishedAt": "2020-04-03T20:16:00Z",
+            "content": "As the world sits in flux between coronavirus and financial market concerns, AAX crypto exchange CEO, Thor Chan, thinks cryptocurrencies will ultimately make out ok.\r\n\u201cDuring a period of intense panic, many investors fled the markets in search of cash, or to \u2026 [+2038 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Crowdfundinsider.com"
+            },
+            "author": "Samantha Hurst",
+            "title": "Permalink to Busted: U.S. Arrests Russian Rapper Maxim Boyko For Cryptocurrency Laundering",
+            "description": "The U.S. Federal Bureau of Investigation (FBI) reportedly arrested Russian rapper Maxim Boyko\u00a0for cryptocurrency laundering. According to the Moscow Times, Boyok was arrested at a Miami condo this past weekend. The Affidavit submitted to support Boyko\u2019s arres\u2026",
+            "url": "https://www.crowdfundinsider.com/2020/04/159734-busted-u-s-arrests-russian-rapper-maxim-boyko-for-cryptocurrency-laundering/",
+            "urlToImage": "https://www.crowdfundinsider.com/wp-content/uploads/2018/12/Handcuffs-Incarceration-Crime-Punishment.jpg",
+            "publishedAt": "2020-04-03T20:16:00Z",
+            "content": "The U.S. Federal Bureau of Investigation (FBI) reportedly arrested Russian rapper Maxim Boyko\u00a0for cryptocurrency laundering. According to the Moscow Times, Boyok was arrested at a Miami condo this past weekend.\r\nThe Affidavit submitted to support Boykos arres\u2026 [+2151 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Bitcoinist.com"
+            },
+            "author": "Christina Comben",
+            "title": "Bitcoin.com Fires 50% of Staff Ahead of BCH Halving",
+            "description": "It\u2019s tough times ahead for BCH as Bitcoin.com prepares to work on a skeleton team. Just five days before the halving, the platform has allegedly fired half of its staff. Bitcoin.com Lays Off 50% of Workforce There\u2019s been a ton of speculation leading up to the\u2026",
+            "url": "https://bitcoinist.com/bitcoin-com-fires-50-of-staff-ahead-of-bch-halving/",
+            "urlToImage": "https://bitcoinist.com/wp-content/uploads/2019/12/shutterstock_353283212-1920x1200.jpg",
+            "publishedAt": "2020-04-03T20:00:32Z",
+            "content": "It\u2019s tough times ahead for BCH as Bitcoin.com prepares to work on a skeleton team. Just five days before the halving, the platform has allegedly fired half of its staff.\r\nBitcoin.com Lays Off 50% of Workforce\r\nThere\u2019s been a ton of speculation leading up to t\u2026 [+2042 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Zerohedge.com"
+            },
+            "author": "Tyler Durden",
+            "title": "Oil Jumps, Stocks Dump As 'Helicopter Money' Sends USA Risk Soaring",
+            "description": "Oil Jumps, Stocks Dump As 'Helicopter Money' Sends USA Risk Soaring The story of the week is fourfold: Helicopter money begins... and the sovereign risk of the USA soars Oil has best week ever on hopes of supply cut. Stocks sink as any rebalance flow support \u2026",
+            "url": "https://www.zerohedge.com/markets/oil-jumps-stocks-dump-helicopter-money-sends-usa-risk-soaringbonds-bid-stocks-skid-oil",
+            "urlToImage": "https://zh-prod-1cc738ca-7d3b-4a72-b792-20bd8d8fa069.storage.googleapis.com/s3fs-public/styles/max_650x650/public/2020-04/2020-04-03_10-29-49.jpg?itok=aoGGHn9L",
+            "publishedAt": "2020-04-03T20:00:00Z",
+            "content": "The story of the week is fourfold:\r\n<ol><li>Helicopter money begins... and the sovereign risk of the USA soars\r\n</li><li>Oil has best week ever on hopes of supply cut.\r\n</li><li>Stocks sink as any rebalance flow support evaporated.\r\n</li><li>Lockdown effects \u2026 [+2757 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Letstalkbitcoin.com"
+            },
+            "author": "adam@letstalkbitcoin.com (The LTB Network), The LTB Network",
+            "title": "Proof of Love Ep. 53 Self Love with Stephanie Murphy & David Murent",
+            "description": "On this very special episode of Proof of Love, we are joined by Stephanie's husband David. The couple's love story began with their mutual interests in self-love, self-awareness, and personal growth. They first met as online friends in 2015, lost touch for a \u2026",
+            "url": "https://letstalkbitcoin.com/blog/post/proof-of-love-ep-53-self-love-with-stephanie-murphy-david-murent?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheDailyBitcoinShow+%28Let%27s+Talk+Bitcoin+Network+Feed%29",
+            "urlToImage": "https://letstalkbitcoin.com/files/blogs/8580-087a456cf86af7366f96927e75ce5856cc4d27cb2cb8099673c594203db1f533.jpg",
+            "publishedAt": "2020-04-03T19:57:00Z",
+            "content": "Click to download audio version\r\nOn this very special episode of Proof of Love, we are joined by Stephanie\u2019s husband David. The couple\u2019s love story began with their mutual interests in self-love, self-awareness, and personal growth.\r\nThey first met as online \u2026 [+1514 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Wordpress.org"
+            },
+            "author": "odin2013",
+            "title": "Hello Polyglots,",
+            "description": "I have suggested strings for the en_za locale for the Bitcoin and Altcoin Wallets plugin but I can\u2019t see an editor for the project so I would like to shoulder that responsibility. Therefore, I would like to become a PTE. Please could you add me Name: Bitcoin \u2026",
+            "url": "https://make.wordpress.org/polyglots/2020/04/03/hello-polyglots-272/",
+            "urlToImage": "https://s.w.org/images/backgrounds/wordpress-bg-medblue.png",
+            "publishedAt": "2020-04-03T19:45:58Z",
+            "content": "I have suggested stringsStringA string is a translatable part of the software. A translation consists of a multitude of localized strings. for the en_za localeLocaleLocale = language version, often a combination of a language code and a region code, for insta\u2026 [+1437 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Letstalkbitcoin.com"
+            },
+            "author": "adam@letstalkbitcoin.com (The LTB Network), The LTB Network",
+            "title": "Bitcoin Magazine Read - What is Happening to Money",
+            "description": "Description: '\u0153In the wake of the enormous money tsunami unleashed onto economies and societies, people have begun (rightfully) to start asking the question: What has become of money? Is money even worth anything any longer?' - Pascal",
+            "url": "https://letstalkbitcoin.com/blog/post/bitcoin-magazine-read-what-happening-money?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheDailyBitcoinShow+%28Let%27s+Talk+Bitcoin+Network+Feed%29",
+            "urlToImage": "https://letstalkbitcoin.com/files/blogs/8579-e7a150d04c7fef321197b62c36897f9231ec31b95bc441e4bf98635c861c932c.jpg",
+            "publishedAt": "2020-04-03T19:39:00Z",
+            "content": "Click to download audio version\r\nDescription:\r\nIn the wake of the enormous money tsunami unleashed onto economies and societies, people have begun (rightfully) to start asking the question: What has become of money? Is money even worth anything any longer? - \u2026 [+16 chars]"
         }
     ]
 }
