@@ -4,7 +4,8 @@
   "description": "Brandon, Kailyn, Dylan",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ng serve --proxy-config proxy.conf.json"
+    "start": "ng serve --proxy-config proxy.conf.json",
+    "run-script": "ng serve --proxy-config proxy.conf.json --port 80"
   },
   "repository": {
     "type": "git",

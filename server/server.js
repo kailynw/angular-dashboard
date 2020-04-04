@@ -1,4 +1,4 @@
-const PORT= 3000;
+#!/usr/bin/env node
 const express= require('express')
 const path= require('path')
 const morgan=require('morgan')
@@ -16,6 +16,11 @@ coronaVirusScrape()
 const app= express()
 app.use(express.json()) 
 app.use(morgan('combined'))
+ 
+if(process.env.NODE_ENV === 'production'){
+    app.use(express.static(path.join(__dirname,"../dist/")))
+}
+
 
 // Allow any method from any host and log requests
 app.use((req, res, next) => {
@@ -29,7 +34,12 @@ app.use((req, res, next) => {
         next(); 
     }
 })
- 
+
+app.get("/",(req,res)=>{
+    if(process.env.NODE_ENV==="production")
+        res.sendFile(path.join(__dirname,"../dist/"))
+})
+
 /**
  * Gets all cryto data since 2013 to most recent date
  * @return {JSON} All Dates and cryto prices
@@ -104,10 +114,14 @@ app.get('/api/corona/:amount',(req,res)=>{
     res.status(200).send(dataSet)
 })
 
+app.get("*", (req,res)=>{
+    if(process.env.NODE_ENV==="production")
+        res.redirect("/")    
+})
 
-  
-app.listen(PORT)
-console.log(`GO to http://localhost:${process.env.PORT}/api/bitcoin`)
+   
+app.listen(process.env.PORT)
+console.log(`GO to ${process.env.PORT}/api/bitcoin`)
 
 
 
