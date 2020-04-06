@@ -20,6 +20,7 @@ export class DashboardComponent implements OnInit {
   public currentChartLabel:any;
   public currentPrice:any;
   public currentCoronaCases:any;
+  public currentFearGreedIndex:any;
   public myChartData;
   public clicked: boolean = true;
   public clicked1: boolean = false;
@@ -486,37 +487,49 @@ ngOnInit() {
 
 
     /******* DAILY SALES CHART*******/
-    this.canvas = document.getElementById("CountryChart");
-    this.ctx  = this.canvas.getContext("2d");
-    var gradientStroke = this.ctx.createLinearGradient(0, 230, 0, 50);
+    this.getFearGreedDataPerPeriod(7).then(Response=>{
+      console.log(Response)
+      let dateList = Response['dateList']
+      let fearGreedIndex = Response['fearGreedList']
+      this.currentFearGreedIndex = fearGreedIndex[fearGreedIndex.length-1]
+      console.log(this.currentFearGreedIndex)
 
-    gradientStroke.addColorStop(1, 'rgba(29,140,248,0.2)');
-    gradientStroke.addColorStop(0.4, 'rgba(29,140,248,0.0)');
-    gradientStroke.addColorStop(0, 'rgba(29,140,248,0)'); //blue colors
+      this.canvas = document.getElementById("CountryChart");
+      this.ctx  = this.canvas.getContext("2d");
+      var gradientStroke = this.ctx.createLinearGradient(0, 230, 0, 50);
+  
+      gradientStroke.addColorStop(1, 'rgba(29,140,248,0.2)');
+      gradientStroke.addColorStop(0.4, 'rgba(29,140,248,0.0)');
+      gradientStroke.addColorStop(0, 'rgba(29,140,248,0)'); //blue colors
+  
+      gradientBarChartConfiguration.scales.yAxes[0].ticks.suggestedMax = 100
+  
+      var myChart = new Chart(this.ctx, {
+        type: 'bar',
+        responsive: true,
+        legend: {
+          display: false
+        },
+        data: {
+          labels: dateList,
+          datasets: [{
+            label: 'Index',
+            fill: true,
+            backgroundColor: gradientStroke,
+            hoverBackgroundColor: gradientStroke,
+            borderColor: '#1f8ef1',
+            borderWidth: 2,
+            borderDash: [],
+            borderDashOffset: 0.0,
+            data: fearGreedIndex,
+          }]
+        },
+        options: gradientBarChartConfiguration
+      });
+    })
 
 
-    var myChart = new Chart(this.ctx, {
-      type: 'bar',
-      responsive: true,
-      legend: {
-        display: false
-      },
-      data: {
-        labels: ['USA', 'GER', 'AUS', 'UK', 'RO', 'BR'],
-        datasets: [{
-          label: "Countries",
-          fill: true,
-          backgroundColor: gradientStroke,
-          hoverBackgroundColor: gradientStroke,
-          borderColor: '#1f8ef1',
-          borderWidth: 2,
-          borderDash: [],
-          borderDashOffset: 0.0,
-          data: [53, 20, 10, 80, 100, 45],
-        }]
-      },
-      options: gradientBarChartConfiguration
-    });
+
 
   }
 
@@ -568,6 +581,28 @@ ngOnInit() {
           dateList.reverse()
           priceList.reverse()
           resolve({dateList,priceList})
+        });
+    });
+  } 
+
+  public getFearGreedDataPerPeriod(days){
+    let fearGreedList:any=[]
+    let dateList:any=[]
+
+    return new Promise((resolve, reject)=>{
+      this.http.get<any>(`/api/fearGreed/${days}`).subscribe(data => {
+          console.log(data)
+          for(let i=0; i<days;i++){
+            let date=data[i]["Date"]
+            let price=data[i]["value"];
+            dateList.push(date)
+            fearGreedList.push(price)
+          }
+
+          //Earliest date to latest
+          dateList.reverse()
+          fearGreedList.reverse()
+          resolve({dateList,fearGreedList})
         });
     });
   } 
