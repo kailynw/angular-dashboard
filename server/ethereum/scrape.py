@@ -1,4 +1,4 @@
-import requests, datetime, pathlib, json
+import requests, datetime, pathlib, json, os
 from bs4 import BeautifulSoup
 
 
@@ -13,7 +13,8 @@ def todaysdate():
 
 def main():
     date = todaysdate()
-    jsonFilePath = pathlib.Path('ethereumData.json').parent.absolute().as_posix() + '/ethereum/ethereumData.json'
+    jsonFilePath = os.path.dirname(os.path.abspath(__file__))+"/ethereumData.json"
+
     response = requests.get('https://coinmarketcap.com/currencies/ethereum/historical-data/?start=20130428&end='+date)
     soup = BeautifulSoup(response.text,'html.parser')
     td = soup.find_all('td')

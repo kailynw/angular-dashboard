@@ -19,28 +19,32 @@ class Scrape{
      * Asynrounously scrapes per service
      */
     getData(time){
-        execAsync('python3 ./bitcoin/scrape.py',(error, stdout, stderr)=>{
-            if(error)
-                scheduleLogger.error("Bitcoin Scrape Err: ", error)
+        execAsync(`python3 ${path.join(__dirname, '../bitcoin/scrape.py')}`,function(error, stdout, stderr){
+            if(error){
+                scheduleLogger.error("Bitcoin Scrape Err: ")
+                scheduleLogger.error(stderr)
+                scheduleLogger.error("err: ", )
+            }
             else
                 scheduleLogger.info("Bitcoin Scrape Successful")
         })
 
-        execAsync('python3 ./corona/coronaData.py',(error, stdout, stderr)=>{
+        execAsync(`python3 ${path.join(__dirname, '../corona/coronaData.py')}`,function(error, stdout, stderr){
+
             if(error)
                 scheduleLogger.error("Coronavirus Scrape Err: ", error)
             else
                 scheduleLogger.info("Coronavirus Scrape Successful")
         })
 
-        execAsync('python3 ./fearGreedIndex/fearGreedIndexData.py',(error, stdout, stderr)=>{
+        execAsync(`python3 ${path.join(__dirname, '../fearGreedIndex/fearGreedIndexData.py')}`,function(error, stdout, stderr){
             if(error)
                 scheduleLogger.error("Fear of Greed Index Scrape Err: ", error)
             else
                 scheduleLogger.info("Fear of Greed Index Scrape Successful")
         })
 
-        execAsync('python3 ./ethereum/scrape.py',(error, stdout, stderr)=>{
+        execAsync(`python3 ${path.join(__dirname, '../ethereum/scrape.py')}`,function(error, stdout, stderr){
             if(error)
                 scheduleLogger.error("Ethereum Scrape Err: ", error)
             else
@@ -48,14 +52,14 @@ class Scrape{
 
         })
 
-        execAsync('python3 ./xrp/scrape.py',(error, stdout, stderr)=>{
+        execAsync(`python3 ${path.join(__dirname, '../xrp/scrape.py')}`,function(error, stdout, stderr){
             if(error)
                 scheduleLogger.error("Xrp Scrape Err: ", error)
             else
                 scheduleLogger.info("Xrp Scrape Successful")
         })
 
-        execAsync('python3 ./bitcoin/news.py',(error, stdout, stderr)=>{
+        execAsync(`python3 ${path.join(__dirname, '../bitcoin/news.py')}`,function(error, stdout, stderr){
             if(error)
                 scheduleLogger.error("Bitcoin News Scrape Err: ", error)
             else
@@ -68,7 +72,6 @@ class Scrape{
      */
     run(){
         const Scrape= this;
-        
         //Schedules cront task at 2AM EST
         schedule.scheduleJob('0 6 * * *', function(date){
             let currentTime= moment(date).utc().format('MM/DD/YYYY hh:mm:ss A')
@@ -80,6 +83,6 @@ class Scrape{
    
 }
 
-new Scrape().run()
+//new Scrape().run()
 
 module.exports=Scrape

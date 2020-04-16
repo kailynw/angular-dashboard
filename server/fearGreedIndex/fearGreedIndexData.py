@@ -1,4 +1,4 @@
-import json, pathlib, requests, datetime
+import json, pathlib, requests, datetime, os
 
 
 def timestamp2Date(timestp):
@@ -6,7 +6,7 @@ def timestamp2Date(timestp):
     return '{} {}, {}'.format(formatted.strftime('%b'), formatted.strftime('%d'), formatted.strftime('%Y'))
 
 def main():
-    jsonFilePath = pathlib.Path('fearGreedData.py').parent.absolute().as_posix() + '/fearGreedIndex/fearGreedIndexData.json'
+    jsonFilePath = os.path.dirname(os.path.abspath(__file__))+"/fearGreedIndexData.json"
     fearGreed = requests.get('https://api.alternative.me/fng/?limit=0').json()['data']
     data = {}
     data["time_until_update"] = {'time_until_update': fearGreed[0]["time_until_update"]}

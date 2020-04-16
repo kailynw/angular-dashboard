@@ -1,4 +1,4 @@
-import requests, datetime, pathlib, json
+import requests, datetime, pathlib, json, os
 from bs4 import BeautifulSoup
 
 
@@ -13,7 +13,7 @@ def todaysdate():
 
 def main():
     date = todaysdate()
-    jsonFilePath = pathlib.Path('xrpData.json').parent.absolute().as_posix() + '/xrp/xrpData.json'
+    jsonFilePath = os.path.dirname(os.path.abspath(__file__))+"/xrpData.json"
     response = requests.get('https://coinmarketcap.com/currencies/xrp/historical-data/?start=20130428&end='+date)
     soup = BeautifulSoup(response.text,'html.parser')
     td = soup.find_all('td')

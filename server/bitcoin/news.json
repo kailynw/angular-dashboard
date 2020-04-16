@@ -1,71 +1,227 @@
 {
     "status": "ok",
-    "totalResults": 4730,
+    "totalResults": 4444,
     "articles": [
         {
             "source": {
                 "id": null,
-                "name": "Coindesk.com"
+                "name": "Newsbtc.com"
             },
-            "author": "Nathan DiCamillo",
-            "title": "Crypto M&A and Fundraising Dropped Sharply in 2019: PwC Report",
-            "description": "The value of crypto M&A deals last year dropped by a whopping 76 percent, according to a new report by PwC \u2013 down from $1.9 billion in 2018 to $451 million in 2019.",
-            "url": "https://www.coindesk.com/crypto-ma-and-fundraising-dropped-sharply-in-2019-pwc-report",
-            "urlToImage": "https://www.coindesk.com/wp-content/uploads/2020/04/pwc-1200x628.jpeg",
-            "publishedAt": "2020-04-06T01:00:07Z",
-            "content": "Crypto companies kept buying each other last year even as both M&amp;A and funding deal flow in the industry took a dive, according to a report released Monday by PwC.\r\nOn the M&amp;A side, crypto-native acquirers took 56 percent of the deal flow, compared to\u2026 [+3103 chars]"
+            "author": "Tony Spilotro",
+            "title": "Chillingly Accurate Indicator Says Crypto Market Will Soon Target New Highs",
+            "description": "The crypto market is like the wild west, with extreme price volatility across all major assets in the space due to the speculative nature of the asset class combined with the low liquidity environment. But it\u2019s still ruled by normal market dynamics, and respo\u2026",
+            "url": "https://www.newsbtc.com/2020/04/16/chillingly-accurate-indicator-says-crypto-market-will-soon-target-new-highs/",
+            "urlToImage": "https://www.newsbtc.com/wp-content/uploads/2020/04/crypto-skyscrapers-1081737_1280-1200x780.jpg",
+            "publishedAt": "2020-04-16T17:30:04Z",
+            "content": "The crypto market is like the wild west, with extreme price volatility across all major assets in the space due to the speculative nature of the asset class combined with the low liquidity environment. But it\u2019s still ruled by normal market dynamics, and respo\u2026 [+2889 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Lesswrong.com"
+            },
+            "author": "Zvi",
+            "title": "Evaluating Predictions in Hindsight",
+            "description": "Published on April 16, 2020 5:20 PM GMT Epistemic Status: Confident I have useful things to say, but apologies for the long post because I don\u2019t think it\u2019s worth my time to make it shorter. Better to get thoughts down for those who want to read them. Scott Al\u2026",
+            "url": "https://www.lesswrong.com/posts/BthNiWJDagLuf2LN2/evaluating-predictions-in-hindsight",
+            "urlToImage": "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1503704344/sequencesgrid/h6vrwdypijqgsop7xwa0.jpg",
+            "publishedAt": "2020-04-16T17:20:04Z",
+            "content": "Epistemic Status: Confident I have useful things to say, but apologies for the long post because I don\u2019t think it\u2019s worth my time to make it shorter. Better to get thoughts down for those who want to read them.\r\nScott Alexander\u2019s latest post points to the que\u2026 [+46999 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Prnewswire.com"
+            },
+            "author": null,
+            "title": "Italian Economy Study 2020: COVID-19 Impact Assessment",
+            "description": "DUBLIN, April 16, 2020 /PRNewswire/ -- The \"Impact of COVID-19 on Italy Economy\" report has been added to ResearchAndMarkets.com's offering. Italy is among the most affected countries with coronavirus outbreak across the globe, as the incidences rising at a s\u2026",
+            "url": "https://www.prnewswire.com/news-releases/italian-economy-study-2020-covid-19-impact-assessment-301041976.html",
+            "urlToImage": "http://mma.prnewswire.com/media/539438/Research_and_Markets_Logo.jpg?p=facebook",
+            "publishedAt": "2020-04-16T17:15:00Z",
+            "content": "DUBLIN, April 16, 2020 /PRNewswire/ -- The \"Impact of COVID-19 on Italy Economy\" report has been added to ResearchAndMarkets.com's offering.\r\nItaly is among the most affected countries with coronavirus outbreak across the globe, as the incidences rising at a \u2026 [+6429 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo.com"
+            },
+            "author": "PR Newswire",
+            "title": "Italian Economy Study 2020: COVID-19 Impact Assessment",
+            "description": "The \"Impact of COVID-19 on Italy Economy\" report has been added to ResearchAndMarkets.com's offering.",
+            "url": "https://news.yahoo.com/italian-economy-study-2020-covid-171500554.html",
+            "urlToImage": "https://s.yimg.com/ny/api/res/1.2/SGW_5pgSsUsDHZ734Kf8HQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTgwMDtoPTg0/https://s.yimg.com/uu/api/res/1.2/M.ZtJLKJavJmZ21BEYlWXg--~B/aD00Mjt3PTQwMDtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/prnewswire.com/e75ef6f3096d7cb6f5dd43ba82eca2fe",
+            "publishedAt": "2020-04-16T17:15:00Z",
+            "content": "DUBLIN, April 16, 2020 /PRNewswire/ -- The \"Impact of COVID-19 on Italy Economy\" report has been added to ResearchAndMarkets.com's offering.\r\nResearch and Markets Logo\r\nItaly is among the most affected countries with coronavirus outbreak across the globe, as \u2026 [+6575 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Coinbase.com"
+            },
+            "author": "Coinbase",
+            "title": "Discover all the ways you can earn crypto in one place",
+            "description": "Now you can start earning crypto with Coinbase Earn, USDC, Tezos and Referrals, all in the rewards section of the mobile app Our mission is to create an open financial system, where anyone in the\u2026",
+            "url": "https://blog.coinbase.com/discover-all-the-ways-you-can-earn-crypto-in-one-place-9bfc6d8731ed",
+            "urlToImage": "https://miro.medium.com/max/1200/1*q0CuVYdEA7vOnGnp7Wvgjw.png",
+            "publishedAt": "2020-04-16T17:01:00Z",
+            "content": "Now you can start earning crypto with Coinbase Earn, USDC, Tezos and Referrals, all in the rewards section of the mobile app\r\nBy Rishav Mukherji, Product Manager\r\nOur mission is to create an open financial system, where anyone in the world can equally partici\u2026 [+1469 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Seekingalpha.com"
+            },
+            "author": "Pranav Ghumatkar",
+            "title": "On the hour",
+            "description": "<ul><li>Dow <font color=\"red\">-0.83%</font>.</li><li>10-yr <font color=\"green\">+0.09%</font>.</li><li>Euro <font color=\"red\">-0.67%</font> vs. dollar.</li><li>Crude <font color=\"red\">-1.06%</font> to $19.66.</li><li>Gold <font color=\"red\">-0.5%</font> to $1,7\u2026",
+            "url": "https://seekingalpha.com/news/3561406-on-hour",
+            "urlToImage": "https://static3.seekingalpha.com/assets/og_image_192-59bfd51c9fe6af025b2f9f96c807e46f8e2f06c5ae787b15bf1423e6c676d4db.png",
+            "publishedAt": "2020-04-16T17:00:34Z",
+            "content": "Dow -0.83%.\r\n10-yr +0.09%.\r\nEuro -0.67% vs. dollar.\r\nCrude -1.06% to $19.66.\r\nGold -0.5% to $1,731.50.\r\nBitcoin +4.06% to $7,024."
+        },
+        {
+            "source": {
+                "id": "handelsblatt",
+                "name": "Handelsblatt"
+            },
+            "author": "Felix Holtermann, Michael Br\u00e4cher",
+            "title": "Digitalw\u00e4hrung: Facebook startet Libra neu \u2013 und beantragt Schweizer Lizenz",
+            "description": "Facebook reagiert mit einem neuen Konzept auf Kritik an seiner geplanten Kryptow\u00e4hrung. Experten f\u00fcrchten den Aufstieg zur \u201em\u00e4chtigen Schattenbank\u201c.",
+            "url": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/digitalwaehrung-facebook-startet-libra-neu-und-beantragt-schweizer-lizenz/25748060.html",
+            "urlToImage": "https://www.handelsblatt.com/images/digitalwaehrungen/25739138/3-format2003.jpg",
+            "publishedAt": "2020-04-16T16:58:38Z",
+            "content": "Am Donnerstagnachmittag deutscher Zeit ver\u00f6ffentlichte die Libra Association die zweite Version ihres sogenannten Whitepapers, des Konzepts der geplanten virtuellen W\u00e4hrung. Darin verabschiedet sich die Vereinigung von einigen zentralen Bausteinen der Ursprun\u2026 [+6490 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Journaldunet.com"
+            },
+            "author": "Charlie Perreau",
+            "title": "Libra : l'association demande une licence de paiement en Suisse",
+            "description": "[LIBRA] Le r\u00e9gulateur suisse a confirm\u00e9 avoir re\u00e7u un dossier de l'association Libra. Cette demande fait suite \u00e0 l'actualisation de son white paper publi\u00e9 en juin 2019.",
+            "url": "https://www.journaldunet.com/patrimoine/guide-des-finances-personnelles/1438892-libra-l-association-demande-une-licence-de-paiement-en-suisse/",
+            "urlToImage": "https://img-0.journaldunet.com/eH9XAzuR8qauv_-YZZVJXn_Rcnk=/540x/smart/a92d108122084ab0a9eb18e883ceeb7f/ccmcms-jdn/15015177.jpg",
+            "publishedAt": "2020-04-16T16:42:00Z",
+            "content": "[LIBRA] Le r\u00e9gulateur suisse a confirm\u00e9 avoir re\u00e7u un dossier de l'association Libra. Cette demande fait suite \u00e0 l'actualisation de son white paper publi\u00e9 en juin 2019. \r\n[Article mis \u00e0 jour le 16 avril\u00a02020 \u00e0 18h42]\u00a0L'association Libra, derri\u00e8re la future cr\u2026 [+10194 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Sputniknews.com"
+            },
+            "author": "Bolle  Selke. Sputnik Deutschland",
+            "title": "Schlimmer als die Weltwirtschaftskrise 1929?: \u00d6konom zur Corona-Krise",
+            "description": "Wegen der Corona-Pandemie findet aktuell eine Deglobalisierung der Welt statt: Grenzen werden geschlossen, Liefer- und Produktionswege unterbrochen. Das schl\u00e4gt sich schwer auf die Wirtschaft weltweit nieder. Das letzte Buch des Anlageexperten Marc Friedrich \u2026",
+            "url": "https://de.sputniknews.com/interviews/20200416326912592-weltwirtschaftskrise-wegen-coronavirus-oekonom/",
+            "urlToImage": "https://cdnde2.img.sputniknews.com/images/32691/27/326912769.jpg",
+            "publishedAt": "2020-04-16T16:40:00Z",
+            "content": "Wegen der Corona-Pandemie findet aktuell eine Deglobalisierung der Welt statt: Grenzen werden geschlossen, Liefer- und Produktionswege unterbrochen. Das schl\u00e4gt sich schwer auf die Wirtschaft weltweit nieder. Das letzte Buch des Anlageexperten Marc Friedrich \u2026 [+7474 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Cointelegraph.com"
+            },
+            "author": "Cointelegraph By Ian Kane",
+            "title": "Crypto Needs to Meld With Legacy Financial Systems for Mass Adoption",
+            "description": "The next step for crypto\u2019s mass adoption might lie in an alliance between decentralized crypto assets and centralized custodians",
+            "url": "https://cointelegraph.com/news/crypto-needs-to-meld-with-legacy-financial-systems-for-mass-adoption",
+            "urlToImage": "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy8xNmFmYWEyM2VkY2RkZmViNGQ2MjM3Y2U1ZWRlMjNjYi5qcGc=.jpg",
+            "publishedAt": "2020-04-16T16:33:00Z",
+            "content": "Mass adoption. It\u2019s a mantra touted often in this space and what every crypto company is working toward. While tremendous progress has been made in the past 10 years on driving crypto awareness and improving user experience, we still aren\u2019t there yet in terms\u2026 [+6392 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Reuters and Rob Price",
+            "title": "Facebook is scaling back its digital currency project Libra as it tries to win regulatory approval",
+            "description": "Facebook is scaling back its cryptocurrency project Libra. The ambitious plan to build a new transnational digital currency faced a wave of criticism and regulatory scrutiny. On Thursday, it announced it would be linked to individual currencies and have addit\u2026",
+            "url": "https://www.businessinsider.com/facebook-scales-back-libra-cryptocurrency-project-2020-4",
+            "urlToImage": "https://i.insider.com/5e7b4e892d41c15ee6126e6a?width=1200&format=jpeg",
+            "publishedAt": "2020-04-16T16:29:07Z",
+            "content": "Facebook is scaling back its beleaguered cryptocurrency project Libra in an attempt to win regulatory approval.\r\nThe Silicon Valley-based social networking giant's ambitious digital currency will now be linked to individual currencies and overseen by global w\u2026 [+4478 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Hwupgrade.it"
+            },
+            "author": null,
+            "title": "Axitea: il ransomware non fa prigionieri, bisogna prevenire i danni",
+            "description": "Secondo Axitea i ransomware lasciano poche possibilit\u00e0 alle vittime. Il metodo migliore per combattere questi attacchi \u00e8 la prevenzione, tramite strumenti efficaci ma anche tramite la formazione delle persone",
+            "url": "https://edge9.hwupgrade.it/news/security/axitea-il-ransomware-non-fa-prigionieri-bisogna-prevenire-i-danni_88576.html",
+            "urlToImage": "https://www.hwupgrade.it/i/n/axitea_logo_720.jpg",
+            "publishedAt": "2020-04-16T16:21:01Z",
+            "content": "Il ransomware \u00e8 attualmente uno dei problemi pi\u00f9 grandi nel mondo della sicurezza, con numerose vittime che vedono i propri dati sequestrati o, in alcuni casi, persi per sempre. Maurizio Tondi, security strategy director in Axitea, ci parla delle principali p\u2026 [+5849 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Tecnoblog.net"
+            },
+            "author": "Felipe Ventura",
+            "title": "Facebook abandona plano original da criptomoeda Libra e anuncia mudan\u00e7as",
+            "description": "Facebook e Associa\u00e7\u00e3o Libra v\u00e3o espelhar d\u00f3lar e euro atrav\u00e9s de stablecoins, cedendo \u00e0 press\u00e3o dos EUA e Uni\u00e3o Europeia Facebook abandona plano original da criptomoeda Libra e anuncia mudan\u00e7as",
+            "url": "https://tecnoblog.net/334443/facebook-abandona-plano-original-da-criptomoeda-libra-e-anuncia-mudancas/",
+            "urlToImage": "https://tecnoblog.net/wp-content/uploads/2019/06/Facebook-Calibra-Libra-700x394.jpg",
+            "publishedAt": "2020-04-16T16:16:52Z",
+            "content": "Rumores diziam que o Facebook iria abandonar os planos de criar uma criptomoeda Libra que poderia concorrer com o d\u00f3lar e o euro. A Associa\u00e7\u00e3o Libra confirmou isso nesta quinta-feira (16): o projeto agora vai espelhar moedas tradicionais atrav\u00e9s de stablecoin\u2026 [+2055 chars]"
         },
         {
             "source": {
                 "id": null,
                 "name": "Newsbtc.com"
             },
-            "author": "Nick Chong",
-            "title": "The Crypto Market Just Put In a \u201cReliable Bottom Signal\u201d: Can We Trust It?",
-            "description": "\u201cHas the crypto market bottomed?\u201d is the question that has been on the minds of Bitcoin traders over the past weeks; after March 12th\u2019s capitulation event, traders have been divided over this question. Despite the uncertainty, Willy Woo, a prominent on-chain \u2026",
-            "url": "https://www.newsbtc.com/2020/04/06/the-crypto-market-just-put-in-a-reliable-bottom-signal-can-we-trust-it/",
-            "urlToImage": "https://www.newsbtc.com/wp-content/uploads/2020/04/shutterstock_714029464-1200x780.jpg",
-            "publishedAt": "2020-04-06T01:00:01Z",
-            "content": "\u201cHas the crypto market bottomed?\u201d is the question that has been on the minds of Bitcoin traders over the past weeks; after March 12th\u2019s capitulation event, traders have been divided over this question.\r\nDespite the uncertainty, Willy Woo, a prominent on-chain\u2026 [+2791 chars]"
+            "author": "Tony Spilotro",
+            "title": "Tezos Cryptocurrency Bull Pennant Points to Imminent Altcoin Season",
+            "description": "The unstoppable altcoin asset that\u2019s taken the cryptocurrency market by storm, Tezos, has potentially formed a bull pennant on both the XTZUSD and XTZBTC pairs, signaling that a powerful breakout could be coming causing the asset to rally against both the dol\u2026",
+            "url": "https://www.newsbtc.com/2020/04/16/tezos-cryptocurrency-bull-pennant-points-to-imminent-altcoin-season/",
+            "urlToImage": "https://www.newsbtc.com/wp-content/uploads/2020/04/tezos-cryptocuurency-altcoin-photo-1524836427911-b539152c9704-1200x780.jpeg",
+            "publishedAt": "2020-04-16T16:00:07Z",
+            "content": "The unstoppable altcoin asset that\u2019s taken the cryptocurrency market by storm, Tezos, has potentially formed a bull pennant on both the XTZUSD and XTZBTC pairs, signaling that a powerful breakout could be coming causing the asset to rally against both the dol\u2026 [+2605 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Cointelegraph.com"
+                "name": "Seekingalpha.com"
             },
-            "author": "Cointelegraph By Samuel Haig",
-            "title": "Stellar to Match XLM Donations to Six Non-Profits During April",
-            "description": "The Tor Project is among six non-profits who will receive matched XLM from the Stellar Development Foundation during April",
-            "url": "https://cointelegraph.com/news/stellar-to-match-xlm-donations-to-six-non-profits-during-april",
-            "urlToImage": "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy8zNDA4MzQwMjFmZWE2ZmZmNWE2YWE2NGJkMmRjY2M1Yi5qcGc=.jpg",
-            "publishedAt": "2020-04-06T01:00:00Z",
-            "content": "The Stellar Development Foundation is matching donations in Lumens (XLM) made to six non-profits during April, including the Tor Project \u2014 the team behind \u2018The Onion Router\u2019 anonymizing browser.\r\nDonations will be matched up to a total of 1.9 million XLM (rou\u2026 [+2090 chars]"
+            "author": "Pranav Ghumatkar",
+            "title": "On the hour",
+            "description": "<ul><li>Dow <font color=\"red\">-0.31%</font>.</li><li>10-yr <font color=\"green\">+0.04%</font>.</li><li>Euro <font color=\"red\">-0.58%</font> vs. dollar.</li><li>Crude <font color=\"green\">+0.6%</font> to $19.99.</li><li>Gold <font color=\"green\">+0.2%</font> to $\u2026",
+            "url": "https://seekingalpha.com/news/3561388-on-hour",
+            "urlToImage": "https://static3.seekingalpha.com/assets/og_image_192-59bfd51c9fe6af025b2f9f96c807e46f8e2f06c5ae787b15bf1423e6c676d4db.png",
+            "publishedAt": "2020-04-16T16:00:01Z",
+            "content": "Dow -0.31%.\r\n10-yr +0.04%.\r\nEuro -0.58% vs. dollar.\r\nCrude +0.6% to $19.99.\r\nGold +0.2% to $1,743.70.\r\nBitcoin +4.72% to $7,034."
         },
         {
             "source": {
                 "id": null,
-                "name": "Slashdot.org"
+                "name": "Coindesk.com"
             },
-            "author": "feedfeeder",
-            "title": "Will Warren Buffett Course Correct on Bitcoin Like He Did with Airline Stocks? - BeInCrypto",
-            "description": "Will Warren Buffett Course Correct on Bitcoin Like He Did with Airline Stocks?BeInCrypto This Dirt-Cheap Warren Buffett Stock Should Be Your Top Pick Right NowThe Motley Fool Warren Buffett Will Shame All Value-Investing Doubters After Coronavirus Crisis is O\u2026",
-            "url": "https://slashdot.org/firehose.pl?op=view&amp;id=128561006",
-            "urlToImage": null,
-            "publishedAt": "2020-04-06T00:53:16Z",
-            "content": "The Fine Print: The following comments are owned by whoever posted them. We are not responsible for them in any way."
+            "author": "John Biggs",
+            "title": "Bitcoin News Roundup for April 16, 2020",
+            "description": "Bitcoin did something weird last night and Facebook pulls back on stablecoin plans. It's CoinDesk's Markets Daily podcast.",
+            "url": "https://www.coindesk.com/bitcoin-news-roundup-for-april-16-2020",
+            "urlToImage": "https://www.coindesk.com/wp-content/uploads/2020/02/MD-FEB-27-RELEASE-1200x628.jpg",
+            "publishedAt": "2020-04-16T16:00:00Z",
+            "content": "Bitcoin did something weird last night and Facebook scales back its stablecoin plans. It's CoinDesk's Markets Daily podcast.\r\nToday's stories:\r\nBitcoin Price Spikes Above $7.1K, Liquidating $23 Million on BitMEX\r\nThis App Tracks the Impact of Your Donation to\u2026 [+665 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Cointelegraph.com"
+                "name": "Androidcentral.com"
             },
-            "author": "Cointelegraph By Turner Wright",
-            "title": "Adult Entertainment Supported by Crypto Shoppers During Quarantine",
-            "description": "Crypto payment processor Coingate spoke to Cointelegraph to report an increase in purchases from adult stores during the COVID-19 pandemic",
-            "url": "https://cointelegraph.com/news/adult-entertainment-supported-by-crypto-shoppers-during-quarantine",
-            "urlToImage": "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy83YjFjZGQxOTI2MjljODY1YTQwZDg4ZTE4Y2QwMDIxMS5qcGc=.jpg",
-            "publishedAt": "2020-04-06T00:40:00Z",
-            "content": "While many crypto holders around the world are practicing self-quarantine and other measures to limit social contact, some are turning to the adult industry for comfort.\u00a0\r\nSpeaking to Cointelegraph, cryptocurrency payment processor CoinGate reported an increa\u2026 [+2343 chars]"
+            "author": "Luke Edwards",
+            "title": "IPVanish is a highly customizable VPN client, here's our full review",
+            "description": "IPVanish Why choose IPVanish VPN A deeply customizable VPN that's great for streaming, torrenting and use on lots of devices at once. Works with Mac Windows Android iPhone & iPad Linux Routers Best VPN for Netflix, Hulu, and streaming Gaming Torrenting and do\u2026",
+            "url": "https://www.androidcentral.com/ipvanish-review",
+            "urlToImage": "https://www.androidcentral.com/sites/androidcentral.com/files/styles/large/public/article_images/2020/02/ipvanish-hero.jpg?itok=IYBHtqNS",
+            "publishedAt": "2020-04-16T15:48:44Z",
+            "content": "Pros\r\n<ul><li>Netflix unblocking</li><li>Fast live chat support</li><li>Customizable apps</li><li>Owned servers</li></ul>\r\nCons\r\n<ul><li>Short trial</li><li>Odd issue with usability</li><li>No Bitcoin support</li></ul>\r\nIPVanish is a VPN that's U.S. based. Fo\u2026 [+4842 chars]"
         },
         {
             "source": {
@@ -73,194 +229,38 @@
                 "name": "Blogspot.com"
             },
             "author": "Paolo Attivissimo",
-            "title": "\u201cPaolo, perch\u00e9 non mi rispondi su Twitter?\u201d Sei risposte standard",
+            "title": "Corona Science, l\u2019app svizzera per monitorare i casi di coronavirus",
             "description": "Blog di Paolo Attivissimo su Internet, social network, informatica e bufale",
-            "url": "https://attivissimo.blogspot.com/2020/04/paolo-perche-non-mi-rispondi-su-twitter.html",
-            "urlToImage": null,
-            "publishedAt": "2020-04-06T00:37:00Z",
-            "content": "Lascio qui a vostra disposizione, e per i vostri suggerimenti, questa bozza di risposta standard basata sulle mini-regole di uso di Twitter che ho deciso di autoimpormi per sopravvivere alla marea di messaggi che mi sta sommergendo, soprattutto in questo peri\u2026 [+1935 chars]"
+            "url": "https://attivissimo.blogspot.com/2020/04/corona-science-lapp-svizzera-per.html",
+            "urlToImage": "https://1.bp.blogspot.com/-JmczN0oowAg/XphXEjBjzdI/AAAAAAABFAM/U6ihuNczxugPwJgheo3mSbq7kKwcPIYcgCLcBGAsYHQ/w1200-h630-p-k-no-nu/IT_Entry1_X-1-538x1024.png",
+            "publishedAt": "2020-04-16T15:43:00Z",
+            "content": "Non \u00e8 un\u2019app di tracciamento dei contatti e non geolocalizza: mentre il mondo parla di app anti-coronavirus di contact tracing, in Svizzera viene proposta su base volontaria Corona Science, un\u2018app sviluppata dai ricercatori della Scuola universitaria professi\u2026 [+1199 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Dailydot.com"
+                "name": "Finextra.com"
             },
-            "author": "Brooke Sjoberg",
-            "title": "Nintendo removes \u2018Cooking Mama: Cookstar\u2019 from its eShop almost as quickly as it was released",
-            "description": "Rumors are starting to circulate about why the game was removed. The post Nintendo removes \u2018Cooking Mama: Cookstar\u2019 from its eShop almost as quickly as it was released appeared first on The Daily Dot.",
-            "url": "https://www.dailydot.com/unclick/cooking-mama-cookstar-cryptocurrency-memes/",
-            "urlToImage": "https://www.dailydot.com/wp-content/uploads/2020/04/cooking-mama-cookstar-1-1.jpg",
-            "publishedAt": "2020-04-06T00:28:31Z",
-            "content": "The Cooking Mama: Cookstar was removed from the Nintendo eShop almost as quickly as it was released. \r\nNone of the names associated with the original series of Cooking Mama are listed as the new games developers, according to IGN. \r\nNow, there is heavy specul\u2026 [+1398 chars]"
+            "author": "Editorial Team",
+            "title": "Virtual Cards 101",
+            "description": "Due to the recent events around the world, we are seeing more and more discussions around new paymen...",
+            "url": "https://www.finextra.com/blogposting/18653/virtual-cards-101",
+            "urlToImage": "https://www.finextra.com/finextra-images/member_photos/thumb_117839_lisette_anciaes.jpg",
+            "publishedAt": "2020-04-16T15:42:20Z",
+            "content": "Due to the recent events around the world, we are seeing more and more discussions around new payments methods from cheques and cash, to bitcoin and virtual payment cards.\r\nPYMNTS.COM Paper Checks, COVID-19 and the Flaw With Analog Relief Payments, March 18, \u2026 [+3780 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Wordpress.com"
+                "name": "Thepienews.com"
             },
-            "author": "netblue30",
-            "title": "Firejail BitTorrent Sandboxing Guide",
-            "description": "When it comes to your security and privacy, it is always better to build your own. Like a chef cooking a meal. Good or bad, at least you know what you put in. Here\u2019s our bittorrent recipe, deep-fried edition.",
-            "url": "https://firejaildns.wordpress.com/2020/03/21/firejail-bittorrent-sandboxing-guide/",
-            "urlToImage": "https://firejaildns.files.wordpress.com/2020/03/fdns-torrent-dns.png",
-            "publishedAt": "2020-04-06T00:17:58Z",
-            "content": "When it comes to your security and privacy, it is always better to build your own. Like a chef cooking a meal. Good or bad, at least you know what you put in. Here\u2019s our bittorrent recipe, deep-fried edition.\r\nIngredients\r\nOne browser\u2026 I guess you\u2019ve seen thi\u2026 [+4748 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Newsbtc.com"
-            },
-            "author": "Nick Chong",
-            "title": "After Trashing Bitcoin, McAfee Is Promoting These Three Altcoins",
-            "description": "If you were asked to name one of Bitcoin\u2019s most prominent proponents, John McAfee would probably be one of the first individuals to come to mind. As the cryptocurrency market was blowing up in 2017, McAfee, the creator of the cybersecurity company that shares\u2026",
-            "url": "https://www.newsbtc.com/2020/04/06/after-trashing-bitcoin-mcafee-is-promoting-these-three-altcoins/",
-            "urlToImage": "https://www.newsbtc.com/wp-content/uploads/2020/03/shutterstock_690884341-1200x780.jpg",
-            "publishedAt": "2020-04-06T00:00:30Z",
-            "content": "If you were asked to name one of Bitcoin\u2019s most prominent proponents, John McAfee would probably be one of the first individuals to come to mind.\r\nAs the cryptocurrency market was blowing up in 2017, McAfee, the creator of the cybersecurity company that share\u2026 [+2031 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Newsbtc.com"
-            },
-            "author": "Nick Chong",
-            "title": "Eerie Fractal: Bitcoin Bottomed at $3,800, Price Poised to Rally 25%",
-            "description": "Over the past few weeks, Bitcoin traders have been divided over whether or not the crypto market has bottomed. Interestingly, many have said no, simply citing the fact that there\u2019s no telling how long the coronavirus crisis will last and how that uncertainty \u2026",
-            "url": "https://www.newsbtc.com/2020/04/05/eerie-fractal-bitcoin-bottomed-at-3800-price-poised-to-rally-25/",
-            "urlToImage": "https://www.newsbtc.com/wp-content/uploads/2020/04/shutterstock_309774686-1200x780.jpg",
-            "publishedAt": "2020-04-05T23:00:51Z",
-            "content": "Over the past few weeks, Bitcoin traders have been divided over whether or not the crypto market has bottomed. Interestingly, many have said no, simply citing the fact that there\u2019s no telling how long the coronavirus crisis will last and how that uncertainty \u2026 [+2136 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Beincrypto.com"
-            },
-            "author": null,
-            "title": "Will Warren Buffett Course Correct on Bitcoin Like He Did with Airline Stocks? - BeInCrypto",
-            "description": "Will Warren Buffett Course Correct on Bitcoin Like He Did with Airline Stocks? BeInCrypto This Dirt-Cheap Warren Buffett Stock Should Be Your Top Pick Right Now The Motley Fool Warren Buffet's Berkshire Hathaway Divests Delta, Southwest Airlines Stock Yahoo F\u2026",
-            "url": "https://beincrypto.com/will-warren-buffett-course-correct-on-bitcoin-like-he-did-with-airline-stocks/",
-            "urlToImage": "https://s32659.pcdn.co/wp-content/uploads/2019/01/bic_warren_buffet.jpg.webp",
-            "publishedAt": "2020-04-05T22:19:38Z",
-            "content": "Warren Buffett has proven he can change his mind after all. The billionaire investor has reportedly dumped nearly $400 million worth of airline shares in recent days after previously committing to see it through despite turbulence. Even Buffett, who has denou\u2026 [+3276 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Newsbtc.com"
-            },
-            "author": "Cole Petersen",
-            "title": "Bitcoin Whales Play \u201cLiquidation Games\u201d as Analysts Eye Buyer Activity at Key Support",
-            "description": "Bitcoin has seen some notable short-term movements throughout the past 24-hours, with bulls attempting to push the crypto past $7,000 at around this time yesterday before BTC once again faced a strong and decisive rejection at this level. BTC saw some further\u2026",
-            "url": "https://www.newsbtc.com/2020/04/05/bitcoin-whales-play-liquidation-games-as-analysts-eye-buyer-activity-at-key-support/",
-            "urlToImage": "https://www.newsbtc.com/wp-content/uploads/2020/04/shutterstock_745407220-1200x780.jpg",
-            "publishedAt": "2020-04-05T22:00:21Z",
-            "content": "Bitcoin has seen some notable short-term movements throughout the past 24-hours, with bulls attempting to push the crypto past $7,000 at around this time yesterday before BTC once again faced a strong and decisive rejection at this level.\r\nBTC saw some furthe\u2026 [+2631 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Zerohedge.com"
-            },
-            "author": "Tyler Durden",
-            "title": "The Jackpot Chronicles Scenario 1: Force Majeure",
-            "description": "The Jackpot Chronicles Scenario 1: Force Majeure Authored by Mark Jeftovic via Guerilla-Capitalism.com, This is the second instalment of The Jackpot Chronicles: Four Possible Post-Coronavirus Scenarios. Force Majeure means: a chance occurrence or superior for\u2026",
-            "url": "https://www.zerohedge.com/markets/jackpot-chronicles-scenario-1-force-majeure",
-            "urlToImage": "https://zh-prod-1cc738ca-7d3b-4a72-b792-20bd8d8fa069.storage.googleapis.com/s3fs-public/styles/max_650x650/public/2020-04/shutterstock_498982093-copy.jpg?itok=eaEfy_2m",
-            "publishedAt": "2020-04-05T22:00:00Z",
-            "content": "Authored by Mark Jeftovic via Guerilla-Capitalism.com,\r\nThis is the second instalment of\u00a0The Jackpot Chronicles: Four Possible Post-Coronavirus Scenarios.\r\nForce Majeure means:\r\na chance occurrence or superior force that renders a contract unenforceable and f\u2026 [+10315 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Newsbtc.com"
-            },
-            "author": "Nick Chong",
-            "title": "This Transpiring Could Send Bitcoin Tumbling 20% Lower: Analyst",
-            "description": "Over the past week, Bitcoin has done surprisingly well, rallying from the $6,100 price seen last Sunday to a weekly high of $7,200, outperforming a majority of assets. Unfortunately, analysts are warning of a breakdown to pre-recovery levels. Related Reading:\u2026",
-            "url": "https://www.newsbtc.com/2020/04/05/this-transpiring-could-send-bitcoin-tumbling-20-lower-analyst/",
-            "urlToImage": "https://www.newsbtc.com/wp-content/uploads/2020/04/shutterstock_520394380-1200x780.jpg",
-            "publishedAt": "2020-04-05T21:00:44Z",
-            "content": "Over the past week, Bitcoin has done surprisingly well, rallying from the $6,100 price seen last Sunday to a weekly high of $7,200, outperforming a majority of assets. Unfortunately, analysts are warning of a breakdown to pre-recovery levels.\r\nCould Bitcoin D\u2026 [+1949 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Cointelegraph.com"
-            },
-            "author": "Cointelegraph By Thomas Simms",
-            "title": "Bitcoin Threat, CoinMarketCap Bought, Trump Hint, Apple Rumor: Hodler\u2019s Digest, March 30\u2013April 5",
-            "description": "In this week\u2019s Hodler\u2019s Digest, a massive crypto merger, bullish Bitcoin isn\u2019t out of the woods yet, and how the coronavirus has hit darknet markets where it hurts",
-            "url": "https://cointelegraph.com/news/bitcoin-threat-coinmarketcap-bought-trump-hint-apple-rumor-hodlers-digest-march-30april-5",
-            "urlToImage": "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy80N2U3N2M2MDEzNGZmZjJiNmZkYjUwNDVmN2ZkMDkwYy5qcGc=.jpg",
-            "publishedAt": "2020-04-05T21:00:00Z",
-            "content": "Coming every Sunday, Hodler\u2019s Digest will help you track every single important news story that happened this week. The best (and worst) quotes, adoption and regulation highlights, leading coins, predictions and much more \u2014 a week on Cointelegraph in one link\u2026 [+9930 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Cointelegraph.com"
-            },
-            "author": "Cointelegraph By Ant\u00f3nio Madeira",
-            "title": "Tapping Into Tokenization for Fresh Ideas: Changing Finance, Gaming and More",
-            "description": "Tokenization is a prevalent topic in the crypto industry, but where does it currently stand, and what are the tech and regulatory issues it faces?",
-            "url": "https://cointelegraph.com/news/tapping-into-tokenization-for-fresh-ideas-changing-finance-gaming-and-more",
-            "urlToImage": "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy81MmE0ZmY1ZDcxOGI4M2ZmMjc5M2FiMWQ4MmE0YWVhZC5qcGc=.jpg",
-            "publishedAt": "2020-04-05T20:25:00Z",
-            "content": "With ongoing talks of Central Bank Digital Currencies and now even a possible digital dollar, tokenization continues to be a hot topic both in the crypto world and in traditional finance. It\u2019s been a buzzword in the financial industry for a while now, and the\u2026 [+11866 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Newsbtc.com"
-            },
-            "author": "Cole Petersen",
-            "title": "Ethereum Faces Confluence of Bullish Factors as Analysts Eye Move to $200",
-            "description": "Ethereum has been struggling to garner any momentum as it faces heightened resistance around the mid-$140 region, with this bout of consolidation coming about in tandem with that seen by Bitcoin and most other altcoins. In spite of this, ETH has been able to \u2026",
-            "url": "https://www.newsbtc.com/2020/04/05/ethereum-faces-confluence-of-bullish-factors-as-analysts-eye-move-to-200/",
-            "urlToImage": "https://www.newsbtc.com/wp-content/uploads/2020/04/shutterstock_1029299632-1200x780.jpg",
-            "publishedAt": "2020-04-05T20:00:43Z",
-            "content": "Ethereum has been struggling to garner any momentum as it faces heightened resistance around the mid-$140 region, with this bout of consolidation coming about in tandem with that seen by Bitcoin and most other altcoins.\r\nIn spite of this, ETH has been able to\u2026 [+2322 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Nypost.com"
-            },
-            "author": "Alexandra Steigrad",
-            "title": "New business models could emerge from musicians\u2019 livestream performances",
-            "description": "In mid-March, as more Americans were ordered to stay home to slow the spread of the coronavirus, a sense of foreboding started to creep up on British rocker Yungblud. His US tour \u2014 set to kick off in April at the Coachella music concert in Indio, Calif. \u2014 had\u2026",
-            "url": "https://nypost.com/2020/04/05/new-business-models-could-emerge-from-musicians-livestreams/",
-            "urlToImage": "https://thenypost.files.wordpress.com/2020/04/yungblud.jpg?quality=90&strip=all&w=1200",
-            "publishedAt": "2020-04-05T19:37:42Z",
-            "content": "In mid-March, as more Americans were ordered to stay home to slow the spread of the coronavirus, a sense of foreboding started to creep up on British rocker Yungblud.\r\nHis US tour set to kick off in April at the Coachella music concert in Indio, Calif. had ju\u2026 [+5255 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Whonix.org"
-            },
-            "author": null,
-            "title": "Whonix: Whonix Development News",
-            "description": "@Patrick wrote: Simplified Package Build Process genmkfile is no longer a build dependency. genmkfile is now only a tool useful for developers. It provides commands such as genmkfile manpages or genmkfile debinstfile. See make help. It\u2019s no longer using a Mak\u2026",
-            "url": "https://forums.whonix.org/t/whonix-development-news/9251",
-            "urlToImage": "https://www.whonix.org/w/images/favicon.ico",
-            "publishedAt": "2020-04-05T19:05:27Z",
-            "content": null
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Cointelegraph.com"
-            },
-            "author": "Cointelegraph By Samuel Haig",
-            "title": "Both Crypto Derivatives and Spot Markets Post Record Volume in March",
-            "description": "Crypto exchanges saw record trade in March, with the global market crash driving all-time highs for both spot and derivatives trading",
-            "url": "https://cointelegraph.com/news/both-crypto-derivatives-and-spot-markets-post-record-volume-in-march",
-            "urlToImage": "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy8wMGNkYmE3MmQ2NjlkNjMyNjBmNWU5M2FiM2M2YTc0YS5qcGc=.jpg",
-            "publishedAt": "2020-04-05T19:02:00Z",
-            "content": "CryptoCompare has published its monthly report analyzing the trade activity on crypto exchanges.\r\nThe record-breaking crash of March 12 and 13 drove new all-time volume highs in both the spot and derivatives markets.\r\nMarch 13 sets record for daily spot trade\u2026 [+1982 chars]"
+            "author": "The PIE News",
+            "title": "ELT: Vouchers will save sector from collapsing - The PIE News",
+            "description": "News and business analysis for Professionals in International Education",
+            "url": "https://thepienews.com/news/vouchers-refunds-could-save-study-travel-sector-from-collapse/",
+            "urlToImage": "https://d1pe6f90ru47yo.cloudfront.net/wp-content/uploads/2020/04/16133522/zzszTd7-860x375.jpg",
+            "publishedAt": "2020-04-16T15:29:00Z",
+            "content": "Both language schools and education agencies are having cash flow problems the result of large numbers of students not being able to start courses, or being forced to return home early.\r\n\u201cThis is the only way not to collapse and destroy the industry\u201d\r\nAnd man\u2026 [+3865 chars]"
         }
     ]
 }
