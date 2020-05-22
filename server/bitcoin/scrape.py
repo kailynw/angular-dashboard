@@ -21,8 +21,6 @@ def main():
     
     jsonFilePath = os.path.dirname(os.path.abspath(__file__))+"/data.json"
 
-    #pathlib.Path('data.json').parent.absolute().as_posix() + '/bitcoin/data.json'
-    print(jsonFilePath)
     currentPrice = requests.get('https://api.alternative.me/v2/ticker/bitcoin/').json()['data']['1']['quotes']['USD']['price']
     todaysDate = datetime.datetime.now()
     todaysDate = '{} {}, {}'.format(todaysDate.strftime('%b'), todaysDate.strftime('%d'), todaysDate.strftime('%Y'))
