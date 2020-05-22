@@ -1,4 +1,5 @@
 import csv
+import os
 import datetime
 import json
 import pathlib
@@ -6,9 +7,8 @@ import pathlib
 import requests
 
 csv_file_link = 'https://raw.githubusercontent.com/RamiKrispin/coronavirus-csv/master/coronavirus_dataset.csv'
-txtFilePath = pathlib.Path('coronaText.txt').parent.absolute().as_posix() + '/corona/coronaText.txt'
-jsonFilePath = pathlib.Path('coronaData.json').parent.absolute().as_posix() + '/corona/coronaData.json'
-
+txtFilePath = os.path.dirname(os.path.abspath(__file__))+"/coronaText.txt"
+jsonFilePath = os.path.dirname(os.path.abspath(__file__))+"/coronaData.json"
 
 def get_prev_date(currentDate):
     currentDate = currentDate.split(sep='-')

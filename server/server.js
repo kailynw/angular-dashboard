@@ -27,7 +27,7 @@ if(process.env.NODE_ENV === 'production'){
     //Production runs scheduled scrape
     scrape.run()
 }
-else 
+else
     scrape.getData()
 
 
