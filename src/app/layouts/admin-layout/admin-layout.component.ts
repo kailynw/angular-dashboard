@@ -1,14 +1,14 @@
 import { Component, OnInit } from "@angular/core";
-
+import {DashboardComponent} from "./../../pages/dashboard/dashboard.component";
 @Component({
   selector: "app-admin-layout",
   templateUrl: "./admin-layout.component.html",
-  styleUrls: ["./admin-layout.component.scss"]
-})
+  styleUrls: ["./admin-layout.component.scss","./../../../assets/css/cryptofont.min.css"]
+})  
 export class AdminLayoutComponent implements OnInit {
   public sidebarColor: string = "red";
 
-  constructor() {}
+  constructor(private dashboard:DashboardComponent) {}
   changeSidebarColor(color){
     var sidebar = document.getElementsByClassName('sidebar')[0];
     var mainPanel = document.getElementsByClassName('main-panel')[0];
@@ -30,6 +30,10 @@ export class AdminLayoutComponent implements OnInit {
     else if(body.classList.contains('white-content')) {
       body.classList.remove('white-content');
     }
+  }
+
+  changeCurrency(currency){
+    this.dashboard.changeChartCurrency(currency)
   }
   ngOnInit() {}
 }

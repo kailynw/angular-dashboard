@@ -4,7 +4,6 @@ const path= require('path')
 const morgan=require('morgan')
 const nodemon= require('nodemon')
 const env= require('dotenv').config({path: path.join(__dirname,"/.env")})
-const execAsync = require("child_process").exec
 const fs = require('fs')
 const apiRouter= require('./routes/apiRouter')
 const Scrape= require("./routes/scrape")

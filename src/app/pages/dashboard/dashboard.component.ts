@@ -3,9 +3,7 @@ import Chart from 'chart.js';
 import {HttpClient} from "@angular/common/http";
 import { computeMsgId } from '@angular/compiler';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
-
-
+import {CryptoService} from './../../services/crypto.service';
 @Component({
   selector: "app-dashboard", 
   templateUrl: "dashboard.component.html"
@@ -31,105 +29,9 @@ export class DashboardComponent implements OnInit {
   private purpleChartConfig= {lineColor:"#a742f5", pointColor: "#a742f0", stroke1: "rgba(165, 55, 253, 0.2)", stroke2: "rgba(165, 55, 253, 0.0)", stroke3: "rgba(165, 55, 253, 0.0)"}
   // coffee = faCoffee;
   private API_HOST:String= this.getApiHost()
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private cryptoService:CryptoService ) {}
 
 ngOnInit() {
- var gradientChartOptionsConfigurationWithTooltipBlue: any = {
-      maintainAspectRatio: false,
-      legend: {
-        display: false
-      },
-
-      tooltips: {
-        backgroundColor: this.tt_default_background,
-        titleFontColor: this.tt_default_title,
-        bodyFontColor: '#666',
-        bodySpacing: 4,
-        xPadding: 12,
-        mode: "nearest",
-        intersect: 0,
-        position: "nearest"
-      },
-      responsive: true,
-      scales: {
-        yAxes: [{
-          barPercentage: 1.6,
-          gridLines: {
-            drawBorder: false,
-            color: 'rgba(29,140,248,0.0)',
-            zeroLineColor: "transparent",
-          },
-          ticks: {
-            suggestedMin: 60,
-            suggestedMax: 125,
-            padding: 20,
-            fontColor: "#2380f7"
-          }
-        }],
-
-        xAxes: [{
-          barPercentage: 1.6,
-          gridLines: {
-            drawBorder: false,
-            color: 'rgba(29,140,248,0.1)',
-            zeroLineColor: "transparent",
-          },
-          ticks: {
-            padding: 20,
-            fontColor: "#2380f7"
-          }
-        }]
-      }
-    };
-
-    var gradientChartOptionsConfigurationWithTooltipPurple: any = {
-      maintainAspectRatio: false,
-      legend: {
-        display: false
-      },
-
-      tooltips: {
-        backgroundColor: this.tt_default_background,
-        titleFontColor: this.tt_default_title,
-        bodyFontColor: '#666',
-        bodySpacing: 4,
-        xPadding: 12,
-        mode: "nearest",
-        intersect: 0,
-        position: "nearest"
-      },
-      responsive: true,
-      scales: {
-        yAxes: [{
-          barPercentage: 1.6,
-          gridLines: {
-            drawBorder: false,
-            color: 'rgba(29,140,248,0.0)',
-            zeroLineColor: "transparent",
-          },
-          ticks: {
-            suggestedMin: 60,
-            suggestedMax: 125,
-            padding: 20,
-            fontColor: "#a742f5"
-          }
-        }],
-
-        xAxes: [{
-          barPercentage: 1.6,
-          gridLines: {
-            drawBorder: false,
-            color: 'rgba(225,78,202,0.1)',
-            zeroLineColor: "transparent",
-          },
-          ticks: {
-            padding: 20,
-            fontColor: "#a742f5"
-          }
-        }]
-      }
-    };
-
     var gradientChartOptionsConfigurationWithTooltipRed: any = {
       maintainAspectRatio: false,
       legend: {
@@ -177,103 +79,6 @@ ngOnInit() {
         }]
       }
     };
-
-    var gradientChartOptionsConfigurationWithTooltipOrange: any = {
-      maintainAspectRatio: false,
-      legend: {
-        display: false
-      },
-
-      tooltips: {
-        backgroundColor: this.tt_default_background,
-        titleFontColor: this.tt_default_title,
-        bodyFontColor: '#666',
-        bodySpacing: 4,
-        xPadding: 12,
-        mode: "nearest",
-        intersect: 0,
-        position: "nearest"
-      },
-      responsive: true,
-      scales: {
-        yAxes: [{
-          barPercentage: 1.6,
-          gridLines: {
-            drawBorder: false,
-            color: 'rgba(29,140,248,0.0)',
-            zeroLineColor: "transparent",
-          },
-          ticks: {
-            suggestedMin: 50,
-            suggestedMax: 110,
-            padding: 20,
-            fontColor: "#ff8a76"
-          }
-        }],
-
-        xAxes: [{
-          barPercentage: 1.6,
-          gridLines: {
-            drawBorder: false,
-            color: 'rgba(220,53,69,0.1)',
-            zeroLineColor: "transparent",
-          },
-          ticks: {
-            padding: 20,
-            fontColor: "#ff8a76"
-          }
-        }]
-      }
-    };
-
-    var gradientChartOptionsConfigurationWithTooltipGreen: any = {
-      maintainAspectRatio: false,
-      legend: {
-        display: false
-      },
-
-      tooltips: {
-        backgroundColor: this.tt_default_background,
-        titleFontColor: this.tt_default_title,
-        bodyFontColor: '#666',
-        bodySpacing: 4,
-        xPadding: 12,
-        mode: "nearest",
-        intersect: 0,
-        position: "nearest"
-      },
-      responsive: true,
-      scales: {
-        yAxes: [{
-          barPercentage: 1.6,
-          gridLines: {
-            drawBorder: false,
-            color: 'rgba(29,140,248,0.0)',
-            zeroLineColor: "transparent",
-          },
-          ticks: {
-            suggestedMin: 50,
-            suggestedMax: 125,
-            padding: 20,
-            fontColor: "#9e9e9e"
-          }
-        }],
-
-        xAxes: [{
-          barPercentage: 1.6,
-          gridLines: {
-            drawBorder: false,
-            color: 'rgba(0,242,195,0.1)',
-            zeroLineColor: "transparent",
-          },
-          ticks: {
-            padding: 20,
-            fontColor: "#9e9e9e"
-          }
-        }]
-      }
-    };
-
 
     var gradientBarChartConfiguration: any = {
       maintainAspectRatio: false,
@@ -325,7 +130,7 @@ ngOnInit() {
 
     /******** TOTOAL SHIPMENTS CHART *******/
 
-    this.getCoronaDataPerPeriod(7).then(response=>{
+    this.cryptoService.getCoronaDataPerPeriod(7).then(response=>{
       console.log(response)
       let dateList= response['dateList']
       let totalCases= response['totalCases']
@@ -417,7 +222,7 @@ ngOnInit() {
 
 
     /***** BITCOIN CHART  ******/
-    this.setBitcoinChartData().then(response=>{
+    this.setCurrencyChartData('bitcoin').then(response=>{
       const sevenDays= response['sevenDays']
       const thirtyDays= response['thirtyDays']
       const ninetyDays= response['ninetyDays']
@@ -476,9 +281,7 @@ ngOnInit() {
         },
         options: gradientChartOptionsConfigurationWithTooltipRed
       };
-      this.myChartData = new Chart(this.ctx, config);
-  
-      
+      this.myChartData = new Chart(this.ctx, config);   
     })
 
 
@@ -487,7 +290,7 @@ ngOnInit() {
 
 
     /******* DAILY SALES CHART*******/
-    this.getFearGreedDataPerPeriod(7).then(Response=>{
+    this.cryptoService.getFearGreedDataPerPeriod(7).then(Response=>{
       console.log(Response)
       let dateList = Response['dateList']
       let fearGreedIndex = Response['fearGreedList']
@@ -539,99 +342,170 @@ ngOnInit() {
   }
 
   public updateOptions() {
+    console.log("UPdate " +this.currentChartLabel)
     this.myChartData.data.datasets[0].data = this.data;
     this.myChartData.data.labels= this.currentChartLabel;
     this.myChartData.update();
   }
 
-  public async setBitcoinChartData(){
+  public async setCurrencyChartData(currency){
       let result:any= {}
 
-      await this.getBitcoinDataPerPeriod(7).then(response=>{
+      await this.cryptoService.getCurrencyDataPerPeriod(currency,7).then(response=>{
         result["sevenDays"]= response
       })
 
-      await this.getBitcoinDataPerPeriod(30).then(response=>{
+      await this.cryptoService.getCurrencyDataPerPeriod(currency,30).then(response=>{
         result["thirtyDays"]= response
       })
 
-      await this.getBitcoinDataPerPeriod(90).then(response=>{
+      await this.cryptoService.getCurrencyDataPerPeriod(currency,90).then(response=>{
         result["ninetyDays"]= response
       })
 
       return result
   }
 
+  public changeChartCurrency(currency){
+    console.log("Dashboard: "+ currency)
 
-  public getBitcoinDataPerPeriod(days){
-    let priceList:any=[]
-    let dateList:any=[]
+    switch(currency){
+      case "bitcoin":
+        this.setCurrencyChartData('bitcoin').then(response=>{
+          this.renderNewChart(response)
+        })
+        break;
 
-    return new Promise((resolve, reject)=>{
-      this.http.get<any>(`/api/bitcoin/${days}`).subscribe(data => {
+      case "ethereum":
+        this.setCurrencyChartData('ethereum').then(response=>{
+          this.renderNewChart(response)
+        })
+        break;
 
-          for(let i=0; i<days;i++){
-            let date=data[i]["Date"]
-            let price=parseFloat(data[i]["Close"].replace(/,/g, ''));
-            dateList.push(date)
-            priceList.push(price)
-          }
-
-          //Earliest date to latest
-          dateList.reverse()
-          priceList.reverse()
-          resolve({dateList,priceList})
-        });
-    });
-  } 
-
-  public getFearGreedDataPerPeriod(days){
-    let fearGreedList:any=[]
-    let dateList:any=[]
-
-    return new Promise((resolve, reject)=>{
-      this.http.get<any>(`/api/fearGreed/${days}`).subscribe(data => {
-          console.log(data)
-          for(let i=0; i<days;i++){
-            let date=data[i]["Date"]
-            let price=data[i]["value"];
-            dateList.push(date)
-            fearGreedList.push(price)
-          }
-
-          //Earliest date to latest
-          dateList.reverse()
-          fearGreedList.reverse()
-          resolve({dateList,fearGreedList})
-        });
-    });
-  } 
-
-  public getCoronaDataPerPeriod(days){
-
-    let totalCases:any= []
-    let dateList:any=[]
-
-    return new Promise((resolve, reject)=>{
-      this.http.get<any>(`/api/corona/${days}`).subscribe(data=>{
-
-        for(let i=0; i<days;i++){
-          let cases= data[i]["cases"]
-          let date= data[i]["date"]
-          totalCases.push(cases)
-          dateList.push(date)
-        }
-
-        totalCases.reverse()
-        dateList.reverse()
-        resolve({dateList,totalCases})
-
-      });
-    });
+      case "xrp":
+        this.setCurrencyChartData('xrp').then(response=>{ 
+          this.renderNewChart(response)
+        })
+        break;
+    }
   }
 
-  		
-	
- 
+  chartOptions(){
+    return {
+      maintainAspectRatio: false,
+      legend: {
+        display: false
+      },
+
+      tooltips: {
+        backgroundColor: this.tt_default_background,
+        titleFontColor: this.tt_default_title,
+        bodyFontColor: '#666',
+        bodySpacing: 4,
+        xPadding: 12,
+        mode: "nearest",
+        intersect: 0,
+        position: "nearest"
+      },
+      responsive: true,
+      scales: {
+        yAxes: [{
+          barPercentage: 1.6,
+          gridLines: {
+            drawBorder: false,
+            color: 'rgba(29,140,248,0.0)',
+            zeroLineColor: "transparent",
+          },
+          ticks: {
+            suggestedMin: 25,
+            suggestedMax: 125,
+            padding: 20,
+            fontColor: "#9a9a9a"
+          }
+        }],
+
+        xAxes: [{
+          barPercentage: 1.6,
+          gridLines: {
+            drawBorder: false,
+            color: 'rgba(233,32,16,0.1)',
+            zeroLineColor: "transparent",
+          },
+          ticks: {
+            padding: 20,
+            fontColor: "#9a9a9a"
+          }
+        }]
+      }
+    };
+
+  }
+
+  renderNewChart(response){
+
+    const sevenDays= response['sevenDays']
+    const thirtyDays= response['thirtyDays']
+    const ninetyDays= response['ninetyDays']
+
+    this.datasets = [
+      sevenDays['priceList'],
+      thirtyDays['priceList'],
+      ninetyDays['priceList']
+    ];
+
+    this.chartLabelSet=[
+      sevenDays['dateList'],
+      thirtyDays['dateList'],
+      ninetyDays['dateList']
+    ];
+    
+    this.data =this.datasets[0]
+    this.currentChartLabel= this.chartLabelSet[0]
+    this.currentPrice= this.datasets[0][sevenDays['priceList'].length-1];
+    this.canvas = document.getElementById("chartBig1");
+    this.ctx = this.canvas.getContext("2d");
+    var gradientStroke = this.ctx.createLinearGradient(0, 230, 0, 50);
+
+    console.log(this.currentPrice)
+    gradientStroke.addColorStop(1,this.purpleChartConfig.stroke1 );
+    gradientStroke.addColorStop(0.4, this.purpleChartConfig.stroke2);
+    gradientStroke.addColorStop(0,  this.purpleChartConfig.stroke3); //purple colors
+
+    //Y-axis scale min
+    let chartOptions= this.chartOptions()
+    chartOptions.scales.yAxes[0].ticks.suggestedMin= this.currentPrice
+    var config = {
+      type: 'line',
+      data: {
+        labels: this.currentChartLabel, 
+        datasets: [{
+          label: "Price ",
+          fill: true,
+          backgroundColor: gradientStroke,
+          borderColor: this.purpleChartConfig.lineColor, //Line Color
+          borderWidth: 2,
+          borderDash: [],
+          borderDashOffset: 0.0,
+          pointBackgroundColor: this.purpleChartConfig.pointColor,//point color
+          pointBorderColor: 'rgba(255,255,255,0)',//transparent
+          pointHoverBackgroundColor: this.purpleChartConfig.pointColor,
+          pointBorderWidth: 20,
+          pointHoverRadius: 4,
+          pointHoverBorderWidth: 15,
+          pointRadius: 4,
+          data: this.data,
+        }
+      ]
+      },
+      options: chartOptions
+    };
+    this.myChartData = new Chart(this.ctx, config);
+    this.updateOptions();
+
+
+  }
 }
+
+
+
 
