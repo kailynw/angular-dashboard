@@ -35,7 +35,6 @@ export class CryptoService {
     });
   } 
 
-
   public getFearGreedDataPerPeriod(days){
     let fearGreedList:any=[]
     let dateList:any=[]
