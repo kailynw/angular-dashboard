@@ -1,0 +1,11 @@
+#crypto-sidebar i{
+    display:block;
+    font-size:25px;
+    padding:7px;
+
+    &:hover{
+        transition: ease-in .2s;
+        transform: scale(1.3);
+        color:white;
+    }
+}

@@ -11,9 +11,14 @@ import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+ 
 import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+
+//Services
+import {CryptoService} from './services/crypto.service'
+
 
 @NgModule({
   imports: [
@@ -28,7 +33,7 @@ import { ComponentsModule } from "./components/components.module";
     ToastrModule.forRoot()
   ],
   declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
-  providers: [],
+  providers: [DashboardComponent,CryptoService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

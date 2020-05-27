@@ -3,9 +3,7 @@ import Chart from 'chart.js';
 import {HttpClient} from "@angular/common/http";
 import { computeMsgId } from '@angular/compiler';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
-
-
+import {CryptoService} from './../../services/crypto.service';
 @Component({
   selector: "app-dashboard", 
   templateUrl: "dashboard.component.html"
@@ -31,7 +29,7 @@ export class DashboardComponent implements OnInit {
   private purpleChartConfig= {lineColor:"#a742f5", pointColor: "#a742f0", stroke1: "rgba(165, 55, 253, 0.2)", stroke2: "rgba(165, 55, 253, 0.0)", stroke3: "rgba(165, 55, 253, 0.0)"}
   // coffee = faCoffee;
   private API_HOST:String= this.getApiHost()
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private cryptoService:CryptoService ) {}
 
 ngOnInit() {
  var gradientChartOptionsConfigurationWithTooltipBlue: any = {
@@ -325,7 +323,7 @@ ngOnInit() {
 
     /******** TOTOAL SHIPMENTS CHART *******/
 
-    this.getCoronaDataPerPeriod(7).then(response=>{
+    this.cryptoService.getCoronaDataPerPeriod(7).then(response=>{
       console.log(response)
       let dateList= response['dateList']
       let totalCases= response['totalCases']
@@ -487,7 +485,7 @@ ngOnInit() {
 
 
     /******* DAILY SALES CHART*******/
-    this.getFearGreedDataPerPeriod(7).then(Response=>{
+    this.cryptoService.getFearGreedDataPerPeriod(7).then(Response=>{
       console.log(Response)
       let dateList = Response['dateList']
       let fearGreedIndex = Response['fearGreedList']
@@ -547,91 +545,24 @@ ngOnInit() {
   public async setBitcoinChartData(){
       let result:any= {}
 
-      await this.getBitcoinDataPerPeriod(7).then(response=>{
+      await this.cryptoService.getBitcoinDataPerPeriod(7).then(response=>{
         result["sevenDays"]= response
       })
 
-      await this.getBitcoinDataPerPeriod(30).then(response=>{
+      await this.cryptoService.getBitcoinDataPerPeriod(30).then(response=>{
         result["thirtyDays"]= response
       })
 
-      await this.getBitcoinDataPerPeriod(90).then(response=>{
+      await this.cryptoService.getBitcoinDataPerPeriod(90).then(response=>{
         result["ninetyDays"]= response
       })
 
       return result
   }
 
-
-  public getBitcoinDataPerPeriod(days){
-    let priceList:any=[]
-    let dateList:any=[]
-
-    return new Promise((resolve, reject)=>{
-      this.http.get<any>(`/api/bitcoin/${days}`).subscribe(data => {
-
-          for(let i=0; i<days;i++){
-            let date=data[i]["Date"]
-            let price=parseFloat(data[i]["Close"].replace(/,/g, ''));
-            dateList.push(date)
-            priceList.push(price)
-          }
-
-          //Earliest date to latest
-          dateList.reverse()
-          priceList.reverse()
-          resolve({dateList,priceList})
-        });
-    });
-  } 
-
-  public getFearGreedDataPerPeriod(days){
-    let fearGreedList:any=[]
-    let dateList:any=[]
-
-    return new Promise((resolve, reject)=>{
-      this.http.get<any>(`/api/fearGreed/${days}`).subscribe(data => {
-          console.log(data)
-          for(let i=0; i<days;i++){
-            let date=data[i]["Date"]
-            let price=data[i]["value"];
-            dateList.push(date)
-            fearGreedList.push(price)
-          }
-
-          //Earliest date to latest
-          dateList.reverse()
-          fearGreedList.reverse()
-          resolve({dateList,fearGreedList})
-        });
-    });
-  } 
-
-  public getCoronaDataPerPeriod(days){
-
-    let totalCases:any= []
-    let dateList:any=[]
-
-    return new Promise((resolve, reject)=>{
-      this.http.get<any>(`/api/corona/${days}`).subscribe(data=>{
-
-        for(let i=0; i<days;i++){
-          let cases= data[i]["cases"]
-          let date= data[i]["date"]
-          totalCases.push(cases)
-          dateList.push(date)
-        }
-
-        totalCases.reverse()
-        dateList.reverse()
-        resolve({dateList,totalCases})
-
-      });
-    });
+  public changeChartCurrency(currency){
+    console.log("Dashboard: "+ currency)
   }
 
-  		
-	
- 
 }
 
